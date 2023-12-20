@@ -1,7 +1,6 @@
-
 ## Networking and Content Delivery:
 
-### Amazon API Gateway\*
+### Amazon API Gateway*
 
 _Amazon API Gateway_ is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure APIs at any scale. With a few clicks in the AWS Management Console, you can create an API that acts as a "front door" for applications to access data, business logic, or functionality from your back-end services, such as applications running on Amazon Elastic Compute Cloud (Amazon EC2), Amazon Elastic Container Service (Amazon ECS) or AWS Elastic Beanstalk, code running on AWS Lambda, or any web application. Amazon API Gateway handles all of the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, authorization and access control, monitoring, and API version management. Amazon API Gateway has no minimum fees or startup costs. For HTTP APIs and REST APIs, you pay only for the API calls you receive and the amount of data transferred out. For WebSocket APIs, you pay only for messages sent and received and for the time a user/device is connected to the WebSocket API.
 
@@ -38,9 +37,9 @@ CloudFront can be used for data, videos, applications, and APIs.
 
 _AWS Direct Connect_. Direct Connect allows you to establish a completely private, dedicated fiber connection from your data center to AWS. You work with a Direct Connect partner in your area to establish this connection, because like my magic doorway, AWS Direct Connect provides a physical line that connects your network to your AWS VPC. This can help you meet high regulatory and compliance needs, as well as sidestep any potential bandwidth issues.
 
-[**AWS Direct Connect**](https://aws.amazon.com/directconnect/) is a service that lets you to establish a dedicated private connection between your data center and a VPC.
+[**AWS Direct Connect**](https://aws.amazon.com/directconnect/) is a service that lets you establish a dedicated private connection between your data center and a VPC.
 
-### AWS Global Accelerator\*
+### AWS Global Accelerator*
 
 _AWS Global Accelerator_ is a networking service that helps you improve the availability, performance, and security of your public applications. Global Accelerator provides two global static public IPs that act as a fixed entry point to your application endpoints, such as Application Load Balancers, Network Load Balancers, Amazon Elastic Compute Cloud (EC2) instances, and elastic IPs.
 
@@ -68,23 +67,23 @@ _Health checking – Route 53_ sends automated requests to your application to v
 
 #### Policy What it Does
 
-_Simple_ - Simple DNS response providing the IP address associated with a name
+_Simple_ - Simple DNS response providing the IP address associated with a name.
 
-_Failover_ - If primary is down (based on health checks), routes to secondary destination
+_Failover_ - If primary is down (based on health checks), routes to secondary destination.
 
-_Geolocation_ - Uses geographic location you're in (e.g. Europe) to route you to the closest region
+_Geolocation_ - Uses geographic location you're in (e.g. Europe) to route you to the closest region.
 
-_Geoproximity_ - Routes you to the closest region within a geographic area
+_Geoproximity_ - Routes you to the closest region within a geographic area.
 
-_Latency_ - Directs you based on the lowest latency route to resources
+_Latency_ - Directs you based on the lowest latency route to resources.
 
-_Multivalue answer_ - Returns several IP addresses and functions as a basic load balancer
+_Multivalue answer_ - Returns several IP addresses and functions as a basic load balancer.
 
-_Weighted_ - Uses the relative weights assigned to resources to determine which to route to
+_Weighted_ - Uses the relative weights assigned to resources to determine which to route to.
 
 ### Amazon VPC
 
-_Amazon VPC_ enables you to provision an isolated section of the AWS Cloud. In this isolated section, you can launch resources in a virtual network that you define. Within a virtual private cloud (VPC), you can organize your resources into subnets. A  **subnet**  is a section of a VPC that can contain resources such as Amazon EC2 instances.
+_Amazon VPC_ enables you to provision an isolated section of the AWS Cloud. In this isolated section, you can launch resources in a virtual network that you define. Within a virtual private cloud (VPC), you can organize your resources into subnets. A **subnet** is a section of a VPC that can contain resources such as Amazon EC2 instances.
 
 You place resources into different subnets. Subnets are chunks of IP addresses in your VPC that allow you to group resources together. Subnets, along with networking rules control whether resources are either publicly or privately available.
 
@@ -92,11 +91,11 @@ In a VPC, subnets can communicate with each other. For example, you might have a
 
 _Internet gateway (igw)_ An internet gateway is a connection between a VPC and the internet. You can think of an internet gateway as being similar to a doorway that customers use to enter the coffee shop. Without an internet gateway, no one can access the resources within your VPC.
 
-_Virtual private gateway_To access private resources in a VPC, you can use a  **virtual private gateway.** A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center or internal corporate network. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
+_Virtual private gateway_ To access private resources in a VPC, you can use a **virtual private gateway.** A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center or internal corporate network. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
 
-### AWS VPN\*
+### AWS VPN*
 
-AWS VPN is comprised of two services: AWS Site-to-Site VPN and AWS Client VPN. AWS Site-to-Site VPN enables you to securely connect your on-premises network or branch office site to your Amazon Virtual Private Cloud (Amazon VPC). AWS Client VPN enables you to securely connect users to AWS or on-premises networks
+AWS VPN is comprised of two services: AWS Site-to-Site VPN and AWS Client VPN. AWS Site-to-Site VPN enables you to securely connect your on-premises network or branch office site to your Amazon Virtual Private Cloud (Amazon VPC). AWS Client VPN enables you to securely connect users to AWS or on-premises networks.
 
 #### _AWS Client VPN_
 

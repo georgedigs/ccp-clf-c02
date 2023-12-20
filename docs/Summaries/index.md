@@ -1,6 +1,6 @@
 ## Summaries
 
-### What is Cloud Computing:
+### What is Cloud Computing
 
 The on-demand delivery of IT resources over the internet with pay-as-you-go pricing.
 
@@ -8,7 +8,7 @@ This means that you can make requests for IT resources like compute, networking,
 
 ### Cloud Computing Models
 
-There are 3 common types of cloud computing model
+There are 3 common types of cloud computing model:
 
 1. Infrastructure as a service (IaaS).
 2. Platform as a service (PaaS).
@@ -34,13 +34,13 @@ With a SaaS offering you do not have to think about how the service is maintaine
 
 A common example of a SaaS application is web-based email which you can use to send and receive email without having to manage feature additions to the email product or maintain the servers and operating systems that the email program is running on.
 
-SaaS provides high availability, fault tolerance, scalability an elasticity.
+SaaS provides high availability, fault tolerance, scalability and elasticity.
 
-### Advantages of cloud computing
+### Advantages of Cloud Computing
 
 Operating in the AWS Cloud offers many benefits over computing in on-premises or hybrid environments.
 
-#### six advantages of cloud computing:
+#### Six Advantages of Cloud Computing
 
 - Trade upfront expense for variable expense.
 - Benefit from massive economies of scale.
@@ -49,43 +49,37 @@ Operating in the AWS Cloud offers many benefits over computing in on-premises or
 - Stop spending money running and maintaining data centers.
 - Go global in minutes.
 
-1.
-#### Trade upfront expense for variable expense.
+1. #### Trade Upfront Expense for Variable Expense
 
-Upfront expenses include data centers, physical servers, and other resources that you would need to invest in before using computing resources.
+   Upfront expenses include data centers, physical servers, and other resources that you would need to invest in before using computing resources.
 
-Instead of investing heavily in data centers and servers before you know how you're going to use them, you can pay only when you consume computing resources.
+   Instead of investing heavily in data centers and servers before you know how you're going to use them, you can pay only when you consume computing resources.
 
-1.
-#### Benefit from massive economies of scale.
+2. #### Benefit from Massive Economies of Scale
 
-By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers aggregates in the cloud, providers such as AWS can achieve higher economies of scale. Economies of scale translate into lower pay-as-you-go prices.
+   By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers aggregates in the cloud, providers such as AWS can achieve higher economies of scale. Economies of scale translate into lower pay-as-you-go prices.
 
-1.
-#### Stop guessing capacity.
+3. #### Stop Guessing Capacity
 
-With cloud computing, you don't have to predict how much infrastructure capacity you will need before deploying an application.
+   With cloud computing, you don't have to predict how much infrastructure capacity you will need before deploying an application.
 
-For example, you can launch Amazon Elastic Compute Cloud (Amazon EC2) instances when needed and pay only for the compute time you use. Instead of paying for resources that are unused or dealing with limited capacity, you can access only the capacity that you need, and scale in or out in response to demand.
+   For example, you can launch Amazon Elastic Compute Cloud (Amazon EC2) instances when needed and pay only for the compute time you use. Instead of paying for resources that are unused or dealing with limited capacity, you can access only the capacity that you need, and scale in or out in response to demand.
 
-1.
-#### Increase speed and agility.
+4. #### Increase Speed and Agility
 
-The flexibility of cloud computing makes it easier for you to develop and deploy applications. This flexibility also provides your development teams with more time to experiment and innovate.
+   The flexibility of cloud computing makes it easier for you to develop and deploy applications. This flexibility also provides your development teams with more time to experiment and innovate.
 
-1.
-#### Stop spending money running and maintaining data centers.
+5. #### Stop Spending Money Running and Maintaining Data Centers
 
-Cloud computing in data centers often requires you to spend more money and time managing infrastructure and servers. A benefit of cloud computing is the ability to focus less on these tasks and more on your applications and customers.
+   Cloud computing in data centers often requires you to spend more money and time managing infrastructure and servers. A benefit of cloud computing is the ability to focus less on these tasks and more on your applications and customers.
 
-1.
-#### Go global in minutes.
+6. #### Go Global in Minutes
 
-The AWS Cloud global footprint enables you to quickly deploy applications to customers around the world, while providing them with low latency.
+   The AWS Cloud global footprint enables you to quickly deploy applications to customers around the world, while providing them with low latency.
 
-Types of Cloud Deployment
+### Types of Cloud Deployment
 
-#### 3 common types of cloud deployment:
+#### Three Common Types of Cloud Deployment
 
 1. _Public Cloud_ – e.g. AWS, Microsoft Azure, Google Cloud Platform (GCP).
 2. _Hybrid Cloud_ – a mixture of public and private clouds.
@@ -103,7 +97,7 @@ A hybrid deployment is a way to connect infrastructure and applications between 
 
 The most common method of hybrid deployment is between the cloud and existing on-premises infrastructure to extend, and grow, an organization's infrastructure into the cloud while connecting cloud resources to the internal system.
 
-#### On-premises
+#### On-Premises
 
 The deployment of resources on-premises, using virtualization and resource management tools, is sometimes called the "private cloud."
 
@@ -111,7 +105,7 @@ On-premises deployment doesn't provide many of the benefits of cloud computing b
 
 In most cases this deployment model is the same as legacy IT infrastructure while using application management and virtualization technologies to try and increase resource utilization.
 
-### Compute in the cloud:
+### Compute in the Cloud
 
 EC2, you can dynamically spin up and spin down virtual servers called EC2 instances. When you launch an EC2 instance, you choose the instance family. The instance family determines the hardware the instance runs on.
 
@@ -129,7 +123,7 @@ You also learned that AWS has different types of compute services beyond just vi
 
 You can use AWS Fargate, which allows you to run your containers on top of a serverless compute platform. Then there is AWS Lambda, which allows you to just upload your code, and configure it to run based on triggers. And you only get charged for when the code is actually running. No containers, no virtual machines. Just code and configuration.
 
-### AWS Global Infrastructure:
+### AWS Global Infrastructure
 
 Logical clusters of data centers make up Availability Zones, Availability Zones in turn make up Regions, and those are spread globally. You then choose what Regions and Availability Zones you want to operate out of and as a best practice, you should always deploy infrastructure across at least two Availability Zones. And some AWS services like Elastic Load Balancing, Amazon SQS, and Amazon SNS already do this for you.
 
@@ -149,7 +143,7 @@ But subnets can also control traffic permissions. Packets are messages from the 
 
 _network ACLs_
 
-A network ACL is a virtual firewall that controls inbound and outbound traffic at the subnet level. Network ACLs perform  **stateless**  packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound. When a packet response for that request comes back to the subnet, the network ACL does not remember your previous request. The network ACL checks the packet response against its list of rules to determine whether to allow or deny. After a packet has entered a subnet, it must have its permissions evaluated for resources within the subnet, such as Amazon EC2 instances.
+A network ACL is a virtual firewall that controls inbound and outbound traffic at the subnet level. Network ACLs perform **stateless** packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound. When a packet response for that request comes back to the subnet, the network ACL does not remember your previous request. The network ACL checks the packet response against its list of rules to determine whether to allow or deny. After a packet has entered a subnet, it must have its permissions evaluated for resources within the subnet, such as Amazon EC2 instances.
 
 You can think of **network ACLs** as passport control officers. If you're on the approved list, you get through. If you're not on the list, or if you're explicitly on the do-not-enter list, then you get blocked. Network ACLs check traffic going into and leaving a subnet, just like passport control. The list gets checked on your way into a country and on the way out. And just because you were let in doesn't necessarily mean they're gonna let you out. Approved traffic can be sent on its way, and potentially harmful traffic, like attempts to gain control of a system through administrative requests, they get blocked before they ever touch the target. You can't hack what you can't touch.
 
@@ -159,7 +153,7 @@ By default, your account's default network ACL allows all inbound and outbound t
 
 _security groups_
 
-A security group is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance. By default, a security group denies all inbound traffic and allows all outbound traffic. You can add custom rules to configure which traffic should be allowed; any other traffic would then be denied. Security groups perform  **stateful**  packet filtering. They remember previous decisions made for incoming packets. When a packet response for that request returns to the instance, the security group remembers your previous request. The security group allows the response to proceed, regardless of inbound security group rules.
+A security group is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance. By default, a security group denies all inbound traffic and allows all outbound traffic. You can add custom rules to configure which traffic should be allowed; any other traffic would then be denied. Security groups perform **stateful** packet filtering. They remember previous decisions made for incoming packets. When a packet response for that request returns to the instance, the security group remembers your previous request. The security group allows the response to proceed, regardless of inbound security group rules.
 
 To solve instance level access questions, we introduce **security groups**. Every EC2 instance, when it's launched, automatically comes with a security group. And by default, the security group does not allow any traffic into the instance at all. All ports are blocked; all IP addresses sending packets are blocked. That's very secure, but perhaps not very useful. If you want an instance to actually accept traffic from the outside, like say, a message from a front end instance or a message from the Internet. So obviously, you can modify the security group to accept a specific type of traffic. In the case of a website, you want web-based traffic or HTTPS to be accepted but not other types of traffic, say an operating system or administration requests.
 
@@ -177,7 +171,7 @@ _Private subnets_ contain resources that should be accessible only through your 
 
 #### Domain Name System (DNS)
 
-Suppose that AnyCompany has a website hosted in the AWS Cloud. Customers enter the web address into their browser, and they are able to access the website. This happens because of _Domain Name System (DNS_**)** resolution. DNS resolution involves a customer DNS resolver communicating with a company DNS server.
+Suppose that AnyCompany has a website hosted in the AWS Cloud. Customers enter the web address into their browser, and they are able to access the website. This happens because of _Domain Name System (DNS_**) resolution. DNS resolution involves a customer DNS resolver communicating with a company DNS server.
 
 You can think of DNS as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address.
 
@@ -279,9 +273,9 @@ The NoSQL corner, using a key value pair that requires no advanced schema, able 
 
 **Round One** Relational databases have been around since the moment businesses started using computers. Being able to build complex analysis of data spread across multiple tables, is the strength of any relational system. In this round, you have a sales supply chain management system that you have to analyze for weak spots. Using RDS is the clear winner here because it's built for business analytics, because you need complex relational joins. Round one easily goes to RDS.
 
-**Round two** , the use case, pretty much anything else. Now that sounds weird, but despite what your standalone legacy database vendor would have you believe, most of what people use expensive relational databases for, has nothing to do with complex relationships. In fact, a lot of what people put into these databases ends up just being look-up tables.
+**Round two**, the use case, pretty much anything else. Now that sounds weird, but despite what your standalone legacy database vendor would have you believe, most of what people use expensive relational databases for, has nothing to do with complex relationships. In fact, a lot of what people put into these databases ends up just being look-up tables.
 
-imagine you have an employee contact list: names, phone numbers, emails, employee IDs. Well, this is all single table territory. I could use a relational database for this, but the things that make relational databases great, all of that complex functionality, creates overhead and lag and expense if you're not actually using it. This is where non-relational databases, Dynamo DB, delivers the knockout punch. By eliminating all the overhead, DynamoDB allows you to build powerful, incredibly fast databases where you don't need complex joint functionality. DynamoDB comes out the undisputed champion.
+Imagine you have an employee contact list: names, phone numbers, emails, employee IDs. Well, this is all single table territory. I could use a relational database for this, but the things that make relational databases great, all of that complex functionality, creates overhead and lag and expense if you're not actually using it. This is where non-relational databases, Dynamo DB, delivers the knockout punch. By eliminating all the overhead, DynamoDB allows you to build powerful, incredibly fast databases where you don't need complex joint functionality. DynamoDB comes out the undisputed champion.
 
 ### Security
 
@@ -317,8 +311,8 @@ The security steps that you take will depend on factors such as the services tha
 
 #### Amazon Web Services (AWS) Security **of** the cloud
 
-- **Hardware** : Regions, Availability Zones, Edge Locations
-- **Software** : Compute, storage, database, networking
+- **Hardware**: Regions, Availability Zones, Edge Locations
+- **Software**: Compute, storage, database, networking
 
 #### Customers: Security **in** the cloud
 
@@ -544,15 +538,15 @@ For example, suppose that you are interested in developing an application that u
 
 #### AWS Cloud Adoption Framework
 
-The Cloud Adoption Framework exists to provide advice to your company to enable a quick and smooth migration to AWS.
+The **Cloud Adoption Framework** exists to provide advice to your company to enable a quick and smooth migration to AWS.
 
 The different Perspectives are Business, People, and Governance Perspectives, which focus on the business capabilities, and then you have the Platform, Security and Operations Perspectives which focus on the technical capabilities.
 
-Each Perspective is used to uncover gaps in your skills and processes, which are then recorded as inputs. These inputs are then used as the basis for creating what is called an AWS Cloud Adoption Framework Action Plan that you then use to guide your organization's change management as you journey to the cloud. Having an action plan that makes sense for your organization can help keep you on track. Migrating to the cloud can be complicated, but again, you're not alone in this, there are tons of resources to help you get started, and the Cloud Adoption Framework is a great place to look.
+Each Perspective is used to uncover gaps in your skills and processes, which are then recorded as inputs. These inputs are then used as the basis for creating what is called an **AWS Cloud Adoption Framework Action Plan** that you then use to guide your organization's change management as you journey to the cloud. Having an action plan that makes sense for your organization can help keep you on track. Migrating to the cloud can be complicated, but again, you're not alone in this, there are tons of resources to help you get started, and the Cloud Adoption Framework is a great place to look.
 
 #### Business Perspective
 
-The Business Perspective ensures that IT aligns with business needs and that IT investments link to key business results. Use the Business Perspective to create a strong business case for cloud adoption and prioritize cloud adoption initiatives. Ensure that your business strategies and goals align with your IT strategies and goals.
+The **Business Perspective** ensures that IT aligns with business needs and that IT investments link to key business results. Use the Business Perspective to create a strong business case for cloud adoption and prioritize cloud adoption initiatives. Ensure that your business strategies and goals align with your IT strategies and goals.
 
 Common roles in the Business Perspective include:
 
@@ -563,7 +557,7 @@ Common roles in the Business Perspective include:
 
 #### People Perspective
 
-The People Perspective supports development of an organization-wide change management strategy for successful cloud adoption. Use the People Perspective to evaluate organizational structures and roles, new skill and process requirements, and identify gaps. This helps prioritize training, staffing, and organizational changes.
+The **People Perspective** supports development of an organization-wide change management strategy for successful cloud adoption. Use the People Perspective to evaluate organizational structures and roles, new skill and process requirements, and identify gaps. This helps prioritize training, staffing, and organizational changes.
 
 Common roles in the People Perspective include:
 
@@ -573,7 +567,7 @@ Common roles in the People Perspective include:
 
 #### Governance Perspective
 
-The Governance Perspective focuses on the skills and processes to align IT strategy with business strategy. This ensures that you maximize the business value and minimize risks. Use the Governance Perspective to understand how to update the staff skills and processes necessary to ensure business governance in the cloud. Manage and measure cloud investments to evaluate business outcomes.
+The **Governance Perspective** focuses on the skills and processes to align IT strategy with business strategy. This ensures that you maximize the business value and minimize risks. Use the Governance Perspective to understand how to update the staff skills and processes necessary to ensure business governance in the cloud. Manage and measure cloud investments to evaluate business outcomes.
 
 Common roles in the Governance Perspective include:
 
@@ -585,7 +579,7 @@ Common roles in the Governance Perspective include:
 
 #### Platform Perspective
 
-The Platform Perspective includes principles and patterns for implementing new solutions on the cloud, and migrating on-premises workloads to the cloud. Use a variety of architectural models to understand and communicate the structure of IT systems and their relationships. Describe the architecture of the target state environment in detail.
+The **Platform Perspective** includes principles and patterns for implementing new solutions on the cloud, and migrating on-premises workloads to the cloud. Use a variety of architectural models to understand and communicate the structure of IT systems and their relationships. Describe the architecture of the target state environment in detail.
 
 Common roles in the Platform Perspective include:
 
@@ -595,7 +589,7 @@ Common roles in the Platform Perspective include:
 
 #### Security Perspective
 
-The Security Perspective ensures that the organization meets security objectives for visibility, auditability, control, and agility. Use the AWS CAF to structure the selection and implementation of security controls that meet the organization's needs.
+The **Security Perspective** ensures that the organization meets security objectives for visibility, auditability, control, and agility. Use the AWS CAF to structure the selection and implementation of security controls that meet the organization's needs.
 
 Common roles in the Security Perspective include:
 
@@ -605,7 +599,7 @@ Common roles in the Security Perspective include:
 
 #### Operations Perspective
 
-The Operations Perspective helps you to enable, run, use, operate, and recover IT workloads to the level agreed upon with your business stakeholders. Define how day-to-day, quarter-to-quarter, and year-to-year business is conducted. Align with and support the operations of the business. The AWS CAF helps these stakeholders define current operating procedures and identify the process changes and training needed to implement successful cloud adoption.
+The **Operations Perspective** helps you to enable, run, use, operate, and recover IT workloads to the level agreed upon with your business stakeholders. Define how day-to-day, quarter-to-quarter, and year-to-year business is conducted. Align with and support the operations of the business. The AWS CAF helps these stakeholders define current operating procedures and identify the process changes and training needed to implement successful cloud adoption.
 
 Common roles in the Operations Perspective include:
 
@@ -626,23 +620,23 @@ When migrating applications to the cloud, 7 of the most common migration strateg
 - Retaining
 - Retiring
 
-_Rehosting_ This is otherwise known as **lift and shift**. And this is an easy thing for businesses to do because you're not making any changes. At least not at first. Just pick up the applications and move them pretty much as is onto AWS. You may not get all the possible benefits. But some companies found that even without any optimization, they could save up to 30% of their total costs just by rehosting. Also, we find it's easier to optimize applications later once they already live in the cloud. Because your organization has better skills to do so. The hard part, the migration, is already complete.
+**Rehosting:** This is otherwise known as **lift and shift**. And this is an easy thing for businesses to do because you're not making any changes. At least not at first. Just pick up the applications and move them pretty much as is onto AWS. You may not get all the possible benefits. But some companies found that even without any optimization, they could save up to 30% of their total costs just by rehosting. Also, we find it's easier to optimize applications later once they already live in the cloud. Because your organization has better skills to do so. The hard part, the migration, is already complete.
 
-_Replatforming_ Or **lift, tinker, and shift**. It's still basically a lift and shift, but instead of a pure one-to-one, you might make a few cloud optimizations. But you're not touching any core code in the process. No new dev efforts are involved here. For example, you could take your existing MySQL database and replatform it onto RDS MySQL, without any code changes at all. Or even consider upgrading to Amazon Aurora. This gives significant benefit to your DBA team as well as improved performance without any code changes.
+**Replatforming:** Or **lift, tinker, and shift**. It's still basically a lift and shift, but instead of a pure one-to-one, you might make a few cloud optimizations. But you're not touching any core code in the process. No new dev efforts are involved here. For example, you could take your existing MySQL database and replatform it onto RDS MySQL, without any code changes at all. Or even consider upgrading to Amazon Aurora. This gives significant benefit to your DBA team as well as improved performance without any code changes.
 
-_Retire_ Some parts of your enterprise IT portfolio are just no longer needed. We found as much as 10% to 20% of companies application portfolios include applications that are no longer being used or already have replacements live and functional. Using the AWS migration plan as the opportunity to actually **end-of-life** these applications can save significant cost and effort for your team. Sometimes you just have to turn off the lights.
+**Retire:** Some parts of your enterprise IT portfolio are just no longer needed. We found as much as 10% to 20% of companies' application portfolios include applications that are no longer being used or already have replacements live and functional. Using the AWS migration plan as the opportunity to actually **end-of-life** these applications can save significant cost and effort for your team. Sometimes you just have to turn off the lights.
 
-_Retain_ Some applications are about to be deprecated but maybe not just yet. They still need to run but don't turn them off for another three months or eight months. These apps could be migrated to AWS, but why? You should only migrate what makes sense for your business. And then as time goes on, these applications can be deprecated where they live, and ultimately retired.
+**Retain:** Some applications are about to be deprecated but maybe not just yet. They still need to run but don't turn them off for another three months or eight months. These apps could be migrated to AWS, but why? You should only migrate what makes sense for your business. And then as time goes on, these applications can be deprecated where they live, and ultimately retired.
 
-_Repurchase_ This is common for companies looking to abandon legacy software vendors and get a fresh start as part of migration. For example, ending a contract with an old CRM vendor and moving to a brand new one. Or perhaps finally ending your licensing with an out of date database vendor in favor of cloud native database offerings. Now, this sounds great, but remember, you'll now be dealing with a new software package and some are easy to implement, some take time. The total upfront expense of the step therefore goes up, but the potential benefits could be substantial.
+**Repurchase:** This is common for companies looking to abandon legacy software vendors and get a fresh start as part of migration. For example, ending a contract with an old CRM vendor and moving to a brand new one. Or perhaps finally ending your licensing with an out-of-date database vendor in favor of cloud-native database offerings. Now, this sounds great, but remember, you'll now be dealing with a new software package and some are easy to implement, some take time. The total upfront expense of the step, therefore, goes up, but the potential benefits could be substantial.
 
-_Refactoring_**(also known as re-architecting**) Now, you're writing new code. This is driven by a strong business need to add features or performance that might not be possible on prem, but now are within your reach. Dramatic changes to your architecture can be very beneficial to your enterprise but this will come at the highest initial cost in terms of planning and human effort.
+**Refactoring (also known as re-architecting):** Now, you're writing new code. This is driven by a strong business need to add features or performance that might not be possible on-prem, but now are within your reach. Dramatic changes to your architecture can be very beneficial to your enterprise but this will come at the highest initial cost in terms of planning and human effort.
 
 ### The Cloud Journey
 
 ### The AWS Well-Architected Framework
 
-The _AWS Well-Architected Framework_ helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.
+The **AWS Well-Architected Framework** helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.
 
 #### The Well-Architected Framework is based on six pillars:
 
@@ -653,11 +647,11 @@ The _AWS Well-Architected Framework_ helps you understand how to design and oper
 - Cost optimization
 - Sustainability
 
-_Operational excellence Pillar_ is the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
+**Operational excellence Pillar** is the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
 
 Design principles for operational excellence in the cloud include performing operations as code, annotating documentation, anticipating failure, and frequently making small, reversible changes.
 
-The _Security pillar_ is the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
+The **Security pillar** is the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
 
 When considering the security of your architecture, apply these best practices:
 
@@ -665,7 +659,7 @@ When considering the security of your architecture, apply these best practices:
 - Apply security at all layers.
 - Protect data in transit and at rest.
 
-_Reliability Pillar_ is the ability of a system to do the following:
+**Reliability Pillar** is the ability of a system to do the following:
 
 - Recover from infrastructure or service disruptions
 - Dynamically acquire computing resources to meet demand
@@ -673,15 +667,15 @@ _Reliability Pillar_ is the ability of a system to do the following:
 
 Reliability includes testing recovery procedures, scaling horizontally to increase aggregate system availability, and automatically recovering from failure.
 
-_Performance efficiency Pillar_ is the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
+**Performance efficiency Pillar** is the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
 
 Evaluating the performance efficiency of your architecture includes experimenting more often, using serverless architectures, and designing systems to be able to go global in minutes.
 
-_Cost optimization Pillar_ is the ability to run systems to deliver business value at the lowest price point.
+**Cost optimization Pillar** is the ability to run systems to deliver business value at the lowest price point.
 
 Cost optimization includes adopting a consumption model, analyzing and attributing expenditure, and using managed services to reduce the cost of ownership.
 
-_Sustainability Pillar_ is the ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.
+**Sustainability Pillar** is the ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.
 
 To facilitate good design for sustainability:
 

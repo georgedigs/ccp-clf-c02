@@ -1,4 +1,3 @@
-
 ## Security, Identity, and Compliance:
 
 ### AWS Artifact
@@ -21,7 +20,7 @@ Next, suppose that a member of your company's development team is building an ap
 
 AWS Artifact Reports provide compliance reports from third-party auditors. These auditors have tested and verified that AWS is compliant with a variety of global, regional, and industry-specific security standards and regulations. AWS Artifact Reports remains up to date with the latest reports released. You can provide the AWS audit artifacts to your auditors or regulators as evidence of AWS security controls.
 
-Customer Compliance Center
+### Customer Compliance Center
 
 The Customer Compliance Center contains resources to help you learn more about AWS compliance. In the Customer Compliance Center, you can read customer compliance stories to discover how companies in regulated industries have solved various compliance, governance, and audit challenges.
 
@@ -139,7 +138,7 @@ IAM roles are ideal for situations in which access to services or resources need
 
 #### Multi-factor authentication
 
-Have you ever signed in to a website that required you to provide multiple pieces of information to verify your identity? You might have needed to provide your password and then a second form of authentication, such as a random code sent to your phone. This is an example of  **multi-factor authentication**.
+Have you ever signed in to a website that required you to provide multiple pieces of information to verify your identity? You might have needed to provide your password and then a second form of authentication, such as a random code sent to your phone. This is an example of **multi-factor authentication**.
 
 In IAM, multi-factor authentication (MFA) provides an extra layer of security for your AWS account.
 
@@ -154,8 +153,6 @@ Amazon Inspector helps to improve the security and compliance of applications by
 After Amazon Inspector has performed an assessment, it provides you with a list of security findings. The list prioritizes by severity level, including a detailed description of each security issue and a recommendation for how to fix it. However, AWS does not guarantee that following the provided recommendations resolves every potential security issue. Under the shared responsibility model, customers are responsible for the security of their applications, processes, and tools that run on AWS services.
 
 ### AWS Key Management Service (AWS KMS)
-
-In the same way, you must ensure that your applications' data is secure while in storage **(encryption at rest)** and while it is transmitted, known as  **encryption in transit**.
 
 _AWS Key Management Service (AWS KMS)_ enables you to perform encryption operations through the use of cryptographic keys. A cryptographic key is a random string of digits used for locking (encrypting) and unlocking (decrypting) data. You can use AWS KMS to create, manage, and use cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.
 

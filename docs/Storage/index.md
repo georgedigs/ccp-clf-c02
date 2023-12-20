@@ -1,4 +1,3 @@
-
 ## Storage:
 
 ### AWS Backup\*
@@ -7,7 +6,7 @@ _AWS Backup_ is a fully managed service that centralizes and automates data prot
 
 ### Amazon Elastic Block Store (Amazon EBS)
 
-_Amazon Elastic Block Store_is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
+_Amazon Elastic Block Store (Amazon EBS)_ is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
 
 To create an EBS volume, you define the configuration (such as volume size and type) and provision it. After you create an EBS volume, it can attach to an Amazon EC2 instance.
 
@@ -15,7 +14,7 @@ Because EBS volumes are for data that needs to persist, it's important to back u
 
 #### _Amazon EBS snapshots_
 
-_EBS snapshot_ is an incremental backup. This means that the first backup taken of a volume copies all the data. For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved.
+An _EBS snapshot_ is an incremental backup. This means that the first backup taken of a volume copies all the data. For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved.
 
 Incremental backups are different from full backups, in which all the data in a storage volume copies each time a backup occurs. The full backup includes data that has not changed since the most recent backup.
 
@@ -29,11 +28,11 @@ _AWS Elastic Disaster Recovery_ automatically converts your servers to boot and 
 
 ### Amazon FSx\*
 
-_Amazon FSx_ for Windows File Server? Amazon FSx for Windows File Server provides fully managed Microsoft Windows file servers, backed by a fully native Windows file system. FSx for Windows File Server has the features, performance, and compatibility to easily lift and shift enterprise applications to the AWS Cloud.
+_Amazon FSx_ for Windows File Server provides fully managed Microsoft Windows file servers, backed by a fully native Windows file system. FSx for Windows File Server has the features, performance, and compatibility to easily lift and shift enterprise applications to the AWS Cloud.
 
 ### Amazon S3
 
-_Amazon Simple Storage Service (Amazon S3_**)** is a service that provides object-level storage. Amazon S3 stores data as objects in buckets.
+_Amazon Simple Storage Service (Amazon S3)_ is a service that provides object-level storage. Amazon S3 stores data as objects in buckets.
 
 You can upload any type of file to Amazon S3, such as images, videos, text files, and so on. For example, you might use Amazon S3 to store backup files, media files for a website, or archived documents. Amazon S3 offers unlimited storage space. The maximum file size for an object in Amazon S3 is 5 TB.
 
@@ -76,66 +75,64 @@ With Amazon S3, you pay only for what you use. You can choose from a range of st
 - How often you plan to retrieve your data
 - How available you need your data to be
 
-1. S3 Standard
+1. **S3 Standard**
 
-- Designed for frequently accessed data
-- Stores data in a minimum of three Availability Zones
+   - Designed for frequently accessed data
+   - Stores data in a minimum of three Availability Zones
 
-Amazon S3 Standard provides high availability for objects. This makes it a good choice for a wide range of use cases, such as websites, content distribution, and data analytics. Amazon S3 Standard has a higher cost than other storage classes intended for infrequently accessed data and archival storage.
+   Amazon S3 Standard provides high availability for objects. This makes it a good choice for a wide range of use cases, such as websites, content distribution, and data analytics. Amazon S3 Standard has a higher cost than other storage classes intended for infrequently accessed data and archival storage.
 
-The first storage class is called S3 Standard and comes with 11 nines of durability. That means an object stored in S3 Standard has a 99.999999999 percent – that's a lot of nines – probability that it will remain intact after a period of 1 year.
+2. **S3 Standard-Infrequent Access (S3 Standard-IA)**
 
-1. _S3 Standard-Infrequent Access (S3 Standard-IA)_
+   - Ideal for infrequently accessed data
+   - Similar to Amazon S3 Standard but has a lower storage price and higher retrieval price
 
-- Ideal for infrequently accessed data
-- Similar to Amazon S3 Standard but has a lower storage price and higher retrieval price
+   Amazon S3 Standard-IA is ideal for data infrequently accessed but requires high availability when needed. Both Amazon S3 Standard and Amazon S3 Standard-IA store data in a minimum of three Availability Zones. Amazon S3 Standard-IA provides the same level of availability as Amazon S3 Standard but with a lower storage price and a higher retrieval price.
 
-Amazon S3 Standard-IA is ideal for data infrequently accessed but requires high availability when needed. Both Amazon S3 Standard and Amazon S3 Standard-IA store data in a minimum of three Availability Zones. Amazon S3 Standard-IA provides the same level of availability as Amazon S3 Standard but with a lower storage price and a higher retrieval price.
+3. **S3 One Zone-Infrequent Access (S3 One Zone-IA)**
 
-1. _S3 One Zone-Infrequent Access (S3 One Zone-IA)_
+   - Stores data in a single Availability Zone
+   - Has a lower storage price than Amazon S3 Standard-IA
 
-- Stores data in a single Availability Zone
-- Has a lower storage price than Amazon S3 Standard-IA
+   Compared to S3 Standard and S3 Standard-IA, which store data in a minimum of three Availability Zones, S3 One Zone-IA stores data in a single Availability Zone. This makes it a good storage class to consider if the following conditions apply:
+   
+   - You want to save costs on storage.
+   - You can easily reproduce your data in the event of an Availability Zone failure.
 
-Compared to S3 Standard and S3 Standard-IA, which store data in a minimum of three Availability Zones, S3 One Zone-IA stores data in a single Availability Zone. This makes it a good storage class to consider if the following conditions apply:
+4. **S3 Intelligent-Tiering**
 
-- You want to save costs on storage.
-- You can easily reproduce your data in the event of an Availability Zone failure.
+   - Ideal for data with unknown or changing access patterns
+   - Requires a small monthly monitoring and automation fee per object
 
-1. _S3 Intelligent-Tiering_
+   In the S3 Intelligent-Tiering storage class, Amazon S3 monitors objects' access patterns. If you haven't accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
 
-- Ideal for data with unknown or changing access patterns
-- Requires a small monthly monitoring and automation fee per object
+5. **S3 Glacier Instant Retrieval**
 
-In the S3 Intelligent-Tiering storage class, Amazon S3 monitors objects' access patterns. If you haven't accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
+   - Works well for archived data that requires immediate access
+   - Can retrieve objects within a few milliseconds
 
-1. _S3 Glacier Instant Retrieval_
+   When you decide between the options for archival storage, consider how quickly you must retrieve the archived objects. You can retrieve objects stored in the S3 Glacier Instant Retrieval storage class within milliseconds, with the same performance as S3 Standard.
 
-- Works well for archived data that requires immediate access
-- Can retrieve objects within a few milliseconds
+6. **S3 Glacier Flexible Retrieval**
 
-When you decide between the options for archival storage, consider how quickly you must retrieve the archived objects. You can retrieve objects stored in the S3 Glacier Instant Retrieval storage class within milliseconds, with the same performance as S3 Standard.
+   - Low-cost storage designed for data archiving
+   - Able to retrieve objects within a few minutes to hours
 
-1. _S3 Glacier Flexible Retrieval_
+   S3 Glacier Flexible Retrieval is a low-cost storage class that is ideal for data archiving. For example, you might use this storage class to store archived customer records or older photos and video files. You can retrieve your data from S3 Glacier Flexible Retrieval from 1 minute to 12 hours.
 
-- Low-cost storage designed for data archiving
-- Able to retrieve objects within a few minutes to hours
+7. **S3 Glacier Deep Archive**
 
-S3 Glacier Flexible Retrieval is a low-cost storage class that is ideal for data archiving. For example, you might use this storage class to store archived customer records or older photos and video files. You can retrieve your data from S3 Glacier Flexible Retrieval from 1 minute to 12 hours.
+   - Lowest-cost object storage class ideal for archiving
+   - Able to retrieve objects within 12 hours
 
-1. _S3 Glacier Deep Archive_
+   S3 Deep Archive supports long-term retention and digital preservation for data that might be accessed once or twice in a year. This storage class is the lowest-cost storage in the AWS Cloud, with data retrieval from 12 to 48 hours. All objects from this storage class are replicated and stored across at least three geographically dispersed Availability Zones.
 
-- Lowest-cost object storage class ideal for archiving
-- Able to retrieve objects within 12 hours
+8. **S3 Outposts**
 
-S3 Deep Archive supports long-term retention and digital preservation for data that might be accessed once or twice in a year. This storage class is the lowest-cost storage in the AWS Cloud, with data retrieval from 12 to 48 hours. All objects from this storage class are replicated and stored across at least three geographically dispersed Availability Zones.
+   - Creates S3 buckets on Amazon S3 Outposts
+   - Makes it easier to retrieve, store, and access data on AWS Outposts
 
-1. _S3 Outposts_
-
-- Creates S3 buckets on Amazon S3 Outposts
-- Makes it easier to retrieve, store, and access data on AWS Outposts
-
-Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment. Amazon S3 Outposts is designed to store data durably and redundantly across multiple devices and servers on your Outposts. It works well for workloads with local data residency requirements that must satisfy demanding performance needs by keeping data close to on-premises applications.
+   Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment. Amazon S3 Outposts is designed to store data durably and redundantly across multiple devices and servers on your Outposts. It works well for workloads with local data residency requirements that must satisfy demanding performance needs by keeping data close to on-premises applications.
 
 ### AWS Storage Gateway\*
 
