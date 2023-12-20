@@ -1,0 +1,1294 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cloud Practitioner - CLF-C02">
+      
+      
+        <meta name="author" content="Georgette Webb">
+      
+      
+      
+        <link rel="prev" href="../Machine%20Learning/">
+      
+      
+        <link rel="next" href="../Migration%20and%20Transfer/">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Management and Governance - Cloud Practitioner - CLF-C02</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#management-and-governance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-header__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud Practitioner - CLF-C02
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Management and Governance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-nav__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    Cloud Practitioner - CLF-C02
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Application%20Integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Application Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloud%20Financial%20Management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Financial Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Customer%20Engagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customer Engagement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developer%20Tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../End%20User%20Computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    End User Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontend%20Web%20and%20Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend Web and Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Internet%20of%20Things%20%28IoT%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internet of Things (IoT)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine%20Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Management and Governance
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Management and Governance
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#management-and-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Management and Governance:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Management and Governance:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-auto-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Auto Scaling*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-cloudformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS CloudFormation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-cloudtrail" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS CloudTrail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS CloudTrail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudtrail-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      CloudTrail Insights
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-cloudwatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon CloudWatch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon CloudWatch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudwatch-alarms" class="md-nav__link">
+    <span class="md-ellipsis">
+      CloudWatch alarms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudwatch-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      CloudWatch benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-compute-optimizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Compute Optimizer*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Config*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-control-tower" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Control Tower*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-health-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Health Dashboard*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-launch-wizard" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Launch Wizard*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-license-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS License Manager*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-management-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Management Console
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Organizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS Organizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-control-policies-scps" class="md-nav__link">
+    <span class="md-ellipsis">
+      service control policies (SCPs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-units-ou" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational units (OU)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-resource-groups-and-tag-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Resource Groups and Tag Editor*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-service-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Service Catalog*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-systems-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Systems Manager*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-trusted-advisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Trusted Advisor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS Trusted Advisor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-trusted-advisor-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Trusted Advisor dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trusted-advisor-5-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trusted Advisor 5 Pillars:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-well-architected-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Well-Architected Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-opsworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS OpsWorks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Migration%20and%20Transfer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migration and Transfer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Networking%20and%20Content%20Delivery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking and Content Delivery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security%2C%20Identity%2C%20and%20Compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security, Identity, and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Serverless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serverless
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AWS%20Global%20Infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Global Infrastructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interacting%20with%20AWS%20Services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interacting with AWS Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Summaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Management and Governance</h1>
+
+<h2 id="management-and-governance">Management and Governance:<a class="headerlink" href="#management-and-governance" title="Permanent link">&para;</a></h2>
+<h3 id="aws-auto-scaling">AWS Auto Scaling*<a class="headerlink" href="#aws-auto-scaling" title="Permanent link">&para;</a></h3>
+<p><em>AWS Auto Scaling</em> monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. Using AWS Auto Scaling, it's easy to setup application scaling for multiple resources across multiple services in minutes.</p>
+<h3 id="aws-cloudformation">AWS CloudFormation<a class="headerlink" href="#aws-cloudformation" title="Permanent link">&para;</a></h3>
+<p><em>AWS CloudFormation</em> is an infrastructure as code tool that allows you to define a wide variety of AWS resources in a declarative way using JSON or YAML text-based documents called CloudFormation templates. A declarative format like this allows you to define what you want to build without specifying the details of exactly how to build it. CloudFormation lets you define what you want, and the CloudFormation engine will worry about the details of calling APIs to get everything built out.</p>
+<p>CloudFormation supports many different AWS resources, from storage, databases, analytics, machine learning, and more. Once you define your resources in a CloudFormation template, CloudFormation will parse the template and begin provisioning all the resources you defined in parallel. CloudFormation manages all the calls to the backend AWS APIs for you. You can run the same CloudFormation template in multiple accounts or multiple regions, and it will create identical environments across them. There is less room for human error as it is a totally automated process.</p>
+<h3 id="aws-cloudtrail">AWS CloudTrail<a class="headerlink" href="#aws-cloudtrail" title="Permanent link">&para;</a></h3>
+<p><em>AWS CloudTrail</em> records API calls for your account. The recorded information includes the identity of the API caller, the time of the API call, the source IP address of the API caller, and more. You can think of CloudTrail as a "trail" of breadcrumbs (or a log of actions) that someone has left behind them.</p>
+<p>Recall that you can use API calls to provision, manage, and configure your AWS resources. With CloudTrail, you can view a complete history of user activity and API calls for your applications and resources.</p>
+<p>Events are typically updated in CloudTrail within 15 minutes after an API call. You can filter events by specifying the time and date that an API call occurred, the user who requested the action, the type of resource that was involved in the API call, and more.</p>
+<p>AWS CloudTrail, the comprehensive API auditing tool. The engine is simple, every request made to AWS, it doesn't matter if it's to launch an EC2 instance, or add a row to a DynamoDB table, or change a user's permissions. Every request gets logged in the CloudTrail engine. The engine records exactly who made the request, which operator, when did they send the API call? Where were they? What was their IP address? And what was the response? Did something change? And what is the new state? Was the request denied?</p>
+<p>From an auditing perspective, well, this is fabulous. So imagine that you're dealing with an auditor who is checking to make sure that nobody from the outside can access your database. That's a good thing. Well, okay, you build a security group that locks out external traffic. But remember that a root-level administrator still has permissions to change those settings, right?</p>
+<p>Well, so how do you prove to the auditor that the security group settings never changed? The answer is CloudTrail. And then CloudTrail can save those logs indefinitely in secure S3 buckets. In addition, with tamper-proof methods like Vault Lock, you then can show absolute provenance of all of these critical security audit logs.</p>
+<h4 id="cloudtrail-insights">CloudTrail Insights<a class="headerlink" href="#cloudtrail-insights" title="Permanent link">&para;</a></h4>
+<p>Within CloudTrail, you can also enable CloudTrail Insights(opens in a new tab). This optional feature allows CloudTrail to automatically detect unusual API activities in your AWS account.</p>
+<p>For example, CloudTrail Insights might detect that a higher number of Amazon EC2 instances than usual have recently launched in your account. You can then review the full event details to determine which actions you need to take next.</p>
+<h3 id="amazon-cloudwatch">Amazon CloudWatch<a class="headerlink" href="#amazon-cloudwatch" title="Permanent link">&para;</a></h3>
+<p><em>Amazon CloudWatch</em> is a web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.</p>
+<p>CloudWatch uses metrics to represent the data points for your resources. AWS services send metrics to CloudWatch. CloudWatch then uses these metrics to create graphs automatically that show how performance has changed over time.</p>
+<p>CloudWatch allows you to monitor your AWS infrastructure and the applications you run on AWS in real time. It works by tracking and monitoring metrics. Think of metrics as variables that are tied to your resources.</p>
+<h4 id="cloudwatch-alarms"><em>CloudWatch alarms</em><a class="headerlink" href="#cloudwatch-alarms" title="Permanent link">&para;</a></h4>
+<p>With CloudWatch, you can create alarms(opens in a new tab) that automatically perform actions if the value of your metric has gone above or below a predefined threshold.</p>
+<p>For example, suppose that your company's developers use Amazon EC2 instances for application development or testing purposes. If the developers occasionally forget to stop the instances, the instances will continue to run and incur charges.</p>
+<p>In this scenario, you could create a CloudWatch alarm that automatically stops an Amazon EC2 instance when the CPU utilization percentage has remained below a certain threshold for a specified period. When configuring the alarm, you can specify to receive a notification whenever this alarm is triggered.</p>
+<p>CloudWatch alarms are integrated with SNS. So we can then send an SMS to the manager to say, clean the machine. You can create all sorts of custom alarms for metrics from all different types of AWS resources.</p>
+<p>The <em>CloudWatch dashboard</em> feature enables you to access all the metrics for your resources from a single location. For example, you can use a CloudWatch dashboard to monitor the CPU utilization of an Amazon EC2 instance, the total number of requests made to an Amazon S3 bucket, and more. You can even customize separate dashboards for different business purposes, applications, or resources.</p>
+<h4 id="cloudwatch-benefits"><em>CloudWatch benefits</em><a class="headerlink" href="#cloudwatch-benefits" title="Permanent link">&para;</a></h4>
+<ol>
+<li>You can have access to all your <em>metrics from a central location</em>. This enables you to collect metrics and logs from all your AWS resources applications, and services that run on AWS and on-premises servers, helping you break down silos so that you can easily gain system-wide visibility.</li>
+<li>You can also get <em>visibility across your applications</em>, infrastructure, and services, which means you gain insights across your distributed stack so you can correlate and visualize metrics and logs to quickly pinpoint and resolve issues. This in turn means you can reduce mean time to resolution, or MTTR, and improve total cost of ownership, or TCO.</li>
+<li>This means <em>freeing up important resources</em> like developers to focus on adding business value. you can drive insights to optimize applications and operational resources. By, for example, aggregating usage across an entire fleet of EC2 instances to derive operational and utilization insights.</li>
+</ol>
+<h3 id="aws-compute-optimizer">AWS Compute Optimizer*<a class="headerlink" href="#aws-compute-optimizer" title="Permanent link">&para;</a></h3>
+<p><em>AWS Compute Optimizer</em> is a service that analyzes the configuration and utilization metrics of your AWS resources. It reports whether your resources are optimal, and generates optimization recommendations to reduce the cost and improve the performance of your workloads. Compute Optimizer also provides graphs showing recent utilization metric history data, as well as projected utilization for recommendations, which you can use to evaluate which recommendation provides the best price-performance trade-off. The analysis and visualization of your usage patterns can help you decide when to move or resize your running resources, and still meet your performance and capacity requirements.</p>
+<h3 id="aws-config">AWS Config*<a class="headerlink" href="#aws-config" title="Permanent link">&para;</a></h3>
+<p><em>AWS Config</em> is a fully managed service that provides you with resource inventory, configuration history, and configuration change notifications to use security and governance. With AWS Config, you can discover existing AWS resources, record configurations for third-party resources, export a complete inventory of your resources with all configuration details, and determine how a resource was configured at any point in time. These capabilities use compliance auditing, security analysis, resource change tracking, and troubleshooting.</p>
+<h3 id="aws-control-tower">AWS Control Tower*<a class="headerlink" href="#aws-control-tower" title="Permanent link">&para;</a></h3>
+<p><em>AWS Control Tower</em> offers a straightforward way to set up and govern an AWS multi-account environment, following prescriptive best practices. AWS Control Tower orchestrates the capabilities of several other AWS services, including AWS Organizations, AWS Service Catalog, and AWS IAM Identity Center (successor to AWS Single Sign-On), to build a landing zone in less than an hour. Resources are set up and managed on your behalf.</p>
+<p>AWS Control Tower orchestration extends the capabilities of AWS Organizations. To help keep your organizations and accounts from drift, which is divergence from best practices, AWS Control Tower applies controls (sometimes called guardrails). For example, you can use controls to help ensure that security logs and necessary cross-account access permissions are created and not altered.</p>
+<h3 id="aws-health-dashboard">AWS Health Dashboard*<a class="headerlink" href="#aws-health-dashboard" title="Permanent link">&para;</a></h3>
+<p><em>AWS Health Dashboard</em> is the single place to learn about the availability and operations of AWS services. You can view the overall status of AWS services, and you can sign in to view personalized communications about your particular AWS account or organization. Your account view provides deeper visibility into resource issues, upcoming changes, and important notifications.</p>
+<h3 id="aws-launch-wizard">AWS Launch Wizard*<a class="headerlink" href="#aws-launch-wizard" title="Permanent link">&para;</a></h3>
+<p><em>AWS Launch Wizard</em> is a console-based service to quickly and easily size, configure, and deploy third-party applications on AWS without the need to identify and provision individual AWS resources.</p>
+<h3 id="aws-license-manager">AWS License Manager*<a class="headerlink" href="#aws-license-manager" title="Permanent link">&para;</a></h3>
+<p><em>License Manager</em> provides you with the flexibility and control to manage license usage to match your organizational structure and processes. License Manager can be set in different configurations to address specific business needs.</p>
+<h3 id="aws-management-console">AWS Management Console<a class="headerlink" href="#aws-management-console" title="Permanent link">&para;</a></h3>
+<p><em>The AWS Management Console</em> is a browser-based interface. Through the console, you can manage your AWS resources visually and in a way that is easy to digest. This is great for getting started and building your knowledge of the services. It's also useful for building out test environments or viewing AWS bills, viewing monitoring, and working with other non-technical resources. You can quickly access recently used services and search for other services by name, keyword, or acronym. The console includes wizards and automated workflows that can simplify the process of completing tasks. You can also use the AWS Console mobile application to perform tasks such as monitoring resources, viewing alarms, and accessing billing information. Multiple identities can stay logged into the AWS Console mobile app at the same time.</p>
+<h3 id="aws-organizations">AWS Organizations<a class="headerlink" href="#aws-organizations" title="Permanent link">&para;</a></h3>
+<p>Suppose that your company has multiple AWS accounts. You can use <strong>AWS Organizations</strong> to consolidate and manage multiple AWS accounts within a central location.</p>
+<p>When you create an organization, AWS Organizations automatically creates a <strong>root</strong>, which is the parent container for all the accounts in your organization.</p>
+<p>In AWS Organizations, you can centrally control permissions for the accounts in your organization by using <strong>service control policies (SCPs)</strong>.</p>
+<h4 id="service-control-policies-scps">service control policies (SCPs)<a class="headerlink" href="#service-control-policies-scps" title="Permanent link">&para;</a></h4>
+<p>SCPs enable you to place restrictions on the AWS services, resources, and individual API actions that users and roles in each account can access.</p>
+<h4 id="organizational-units-ou">Organizational units (OU)<a class="headerlink" href="#organizational-units-ou" title="Permanent link">&para;</a></h4>
+<p>In AWS Organizations, you can group accounts into organizational units (OUs) to make it easier to manage accounts with similar business or security requirements. When you apply a policy to an OU, all the accounts in the OU automatically inherit the permissions specified in the policy.</p>
+<p>By organizing separate accounts into OUs, you can more easily isolate workloads or applications that have specific security requirements. For instance, if your company has accounts that can access only the AWS services that meet certain regulatory requirements, you can put these accounts into one OU. Then, you can attach a policy to the OU that blocks access to all other AWS services that do not meet the regulatory requirements.</p>
+<p><em>Consolidated Billing</em>. At the end of every month, instead of having to pay an AWS bill for every single account, you can roll those bills up into one bill owned by the owner of the organization. This makes it easier to keep track of your bills. You don't get 100 bills, if you have 100 AWS accounts.</p>
+<p>You can still view your AWS bill in an itemized fashion. So you know which accounts spent what, but it all goes into one central location for ease of viewing. There are other benefits of using this feature too. One of them is that the usage for AWS resources is rolled up to the organization level. AWS does offer bulk pricing. Each individual account may only have a small amount of usage, but you can get the bulk discount pricing because of the aggregate across all accounts in the organization. In addition, if you have a savings plan in place, or if you are using reserved instances for EC2, it can be shared across AWS accounts in the organization. The best part about this is that the feature is free and easy to use. So it simplifies the billing process, lets you share savings across accounts, and doesn't cost you any extra money.</p>
+<h3 id="aws-resource-groups-and-tag-editor">AWS Resource Groups and Tag Editor*<a class="headerlink" href="#aws-resource-groups-and-tag-editor" title="Permanent link">&para;</a></h3>
+<p><em>Resource Groups</em> to organize your AWS resources. AWS Resource Groups is the service that lets you manage and automate tasks on large numbers of resources at one time.</p>
+<p><em>Tags</em> are key and value pairs that act as metadata for organizing your AWS resources. With most AWS resources, you have the option of adding tags when you create the resource. Examples of resources include an Amazon Elastic Compute Cloud (Amazon EC2) instance, an Amazon Simple Storage Service (Amazon S3) bucket, or a secret in AWS Secrets Manager.</p>
+<h3 id="aws-service-catalog">AWS Service Catalog*<a class="headerlink" href="#aws-service-catalog" title="Permanent link">&para;</a></h3>
+<p><em>AWS Service Catalog</em> lets you centrally manage your cloud resources to achieve governance at scale of your infrastructure as code (IaC) templates, written in CloudFormation or Terraform configurations. With AWS Service Catalog, you can meet your compliance requirements while making sure your customers can quickly deploy the cloud resources they need.</p>
+<h3 id="aws-systems-manager">AWS Systems Manager*<a class="headerlink" href="#aws-systems-manager" title="Permanent link">&para;</a></h3>
+<p><em>AWS Systems Manager</em> allows you to safely automate common and repetitive IT operations and management tasks. With Systems Manager Automation, you use predefined playbooks, or you can build, run, and share wiki-style automated playbooks to enable AWS resource management across multiple accounts and AWS Regions.</p>
+<h3 id="aws-trusted-advisor">AWS Trusted Advisor<a class="headerlink" href="#aws-trusted-advisor" title="Permanent link">&para;</a></h3>
+<p><em>AWS Trusted Advisor</em> is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.</p>
+<p>Trusted Advisor compares its findings to AWS best practices in five categories: cost optimization, performance, security, fault tolerance, and service limits. For the checks in each category, Trusted Advisor offers a list of recommended actions and additional resources to learn more about AWS best practices.</p>
+<p>The guidance provided by AWS Trusted Advisor can benefit your company at all stages of deployment. For example, you can use AWS Trusted Advisor to assist you while you are creating new workflows and developing new applications. You can also use it while you are making ongoing improvements to existing applications and resources.</p>
+<h4 id="aws-trusted-advisor-dashboard"><em>AWS Trusted Advisor dashboard</em><a class="headerlink" href="#aws-trusted-advisor-dashboard" title="Permanent link">&para;</a></h4>
+<p>When you access the Trusted Advisor dashboard on the AWS Management Console, you can review completed checks for cost optimization, performance, security, fault tolerance, and service limits.</p>
+<p>For each category:</p>
+<ul>
+<li>The green check indicates the number of items for which it detected no problems.</li>
+<li>The orange triangle represents the number of recommended investigations.</li>
+<li>The red circle represents the number of recommended actions.</li>
+</ul>
+<h4 id="trusted-advisor-5-pillars"><em>Trusted Advisor 5 Pillars:</em><a class="headerlink" href="#trusted-advisor-5-pillars" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Cost Optimization</strong></li>
+</ol>
+<p>Trusted Advisor can help you save cost with actionable recommendations by analyzing usage, configuration, and spend. Examples include identifying idle RDS DB instances, underutilized EBS volumes, unassociated Elastic IP addresses, and excessive timeouts in Lambda functions.</p>
+<ol>
+<li><strong>Performance</strong></li>
+</ol>
+<p>Trusted Advisor can help improve the performance of your services with actionable recommendations by analyzing usage and configuration. Examples include analyzing EBS throughput and latency, compute usage of EC2 instances, and configurations on CloudFront.</p>
+<ol>
+<li><strong>Security</strong></li>
+</ol>
+<p>Trusted Advisor can help improve the security of your AWS environment by suggesting foundational security best practices curated by security experts. Examples include identifying RDS security group access risk, exposed access keys, and unnecessary S3 bucket permissions.</p>
+<ol>
+<li><strong>Fault Tolerance</strong></li>
+</ol>
+<p>Trusted Advisor can help improve the reliability of your services. Examples include examining Auto scaling EC2 groups, deleted health checks on Route 53, disabled Availability Zones, and disabled RDS backups.</p>
+<ol>
+<li><strong>Service Limits (quotas)</strong></li>
+</ol>
+<p>Service quotas are the maximum number of resources that you can create in an AWS account. AWS implements quotas to provide highly available and reliable service to all customers, and protects you from unintentional spend. Trusted Advisor will notify you once you reach more than 80% of a service quota. You can then follow recommendations to delete resources or request a quota increase.</p>
+<h3 id="aws-well-architected-tool">AWS Well-Architected Tool<a class="headerlink" href="#aws-well-architected-tool" title="Permanent link">&para;</a></h3>
+<p>The AWS Well-Architected Tool lets you review your workloads against current AWS best practices and obtain advice on how to architect your workloads for the cloud. This tool uses the AWS Well-Architected Framework.</p>
+<p>It kind of looks like a traffic light system, with green being go, keep up the good work. Orange being, you should probably look into this because there's room for improvement. And red being, okay, you should look at this because something is at risk. These are areas where the tool has detected potential issues, and it presents you with a plan on how to architect using established best practices. It should be noted that you can always override these settings if the questions don't apply to your scenario. It's very customizable.</p>
+<h3 id="aws-opsworks">AWS OpsWorks<a class="headerlink" href="#aws-opsworks" title="Permanent link">&para;</a></h3>
+<p>AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet. Chef and Puppet are automation platforms that allow you to use code to automate the configurations of your servers. OpsWorks lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or on-premises compute environments.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Georgette Webb
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "announce.dismiss", "navigation.top", "search.suggest", "search.share", "search.highlight", "content.tabs.link", "content.tooltips", "content.code.select", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1174 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cloud Practitioner - CLF-C02">
+      
+      
+        <meta name="author" content="Georgette Webb">
+      
+      
+      
+        <link rel="prev" href="../Serverless/">
+      
+      
+        <link rel="next" href="../AWS%20Global%20Infrastructure/">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Storage - Cloud Practitioner - CLF-C02</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#storage" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-header__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud Practitioner - CLF-C02
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Storage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-nav__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    Cloud Practitioner - CLF-C02
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Application%20Integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Application Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloud%20Financial%20Management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Financial Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Customer%20Engagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customer Engagement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developer%20Tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../End%20User%20Computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    End User Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontend%20Web%20and%20Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend Web and Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Internet%20of%20Things%20%28IoT%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internet of Things (IoT)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine%20Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Management%20and%20Governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Management and Governance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Migration%20and%20Transfer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migration and Transfer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Networking%20and%20Content%20Delivery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking and Content Delivery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security%2C%20Identity%2C%20and%20Compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security, Identity, and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Serverless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serverless
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Backup*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-elastic-block-store-amazon-ebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Elastic Block Store (Amazon EBS)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Elastic Block Store (Amazon EBS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ebs-snapshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EBS snapshots
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-elastic-file-system-amazon-efs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Elastic File System (Amazon EFS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-elastic-disaster-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Elastic Disaster Recovery*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-fsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon FSx*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon S3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#s3-charges" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Charges:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-storage-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Storage Gateway*
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AWS%20Global%20Infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Global Infrastructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interacting%20with%20AWS%20Services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interacting with AWS Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Summaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Storage</h1>
+
+<h2 id="storage">Storage:<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h2>
+<h3 id="aws-backup">AWS Backup*<a class="headerlink" href="#aws-backup" title="Permanent link">&para;</a></h3>
+<p><em>AWS Backup</em> is a fully managed service that centralizes and automates data protection across AWS services and hybrid workloads. It provides core data protection features, ransomware recovery capabilities, and compliance insights and analytics for data protection policies and operations.</p>
+<h3 id="amazon-elastic-block-store-amazon-ebs">Amazon Elastic Block Store (Amazon EBS)<a class="headerlink" href="#amazon-elastic-block-store-amazon-ebs" title="Permanent link">&para;</a></h3>
+<p><em>Amazon Elastic Block Store (Amazon EBS)</em> is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.</p>
+<p>To create an EBS volume, you define the configuration (such as volume size and type) and provision it. After you create an EBS volume, it can attach to an Amazon EC2 instance.</p>
+<p>Because EBS volumes are for data that needs to persist, it's important to back up the data. You can take incremental backups of EBS volumes by creating Amazon EBS snapshots.</p>
+<h4 id="amazon-ebs-snapshots"><em>Amazon EBS snapshots</em><a class="headerlink" href="#amazon-ebs-snapshots" title="Permanent link">&para;</a></h4>
+<p>An <em>EBS snapshot</em> is an incremental backup. This means that the first backup taken of a volume copies all the data. For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved.</p>
+<p>Incremental backups are different from full backups, in which all the data in a storage volume copies each time a backup occurs. The full backup includes data that has not changed since the most recent backup.</p>
+<h3 id="amazon-elastic-file-system-amazon-efs">Amazon Elastic File System (Amazon EFS)<a class="headerlink" href="#amazon-elastic-file-system-amazon-efs" title="Permanent link">&para;</a></h3>
+<p><em>Amazon Elastic File System (Amazon EFS)</em> is a scalable file system used with AWS Cloud services and on-premises resources. As you add and remove files, Amazon EFS grows and shrinks automatically. It can scale on demand to petabytes without disrupting applications.</p>
+<h3 id="aws-elastic-disaster-recovery">AWS Elastic Disaster Recovery*<a class="headerlink" href="#aws-elastic-disaster-recovery" title="Permanent link">&para;</a></h3>
+<p><em>AWS Elastic Disaster Recovery</em> automatically converts your servers to boot and run natively on AWS when you launch instances for drills or recovery.</p>
+<h3 id="amazon-fsx">Amazon FSx*<a class="headerlink" href="#amazon-fsx" title="Permanent link">&para;</a></h3>
+<p><em>Amazon FSx</em> for Windows File Server provides fully managed Microsoft Windows file servers, backed by a fully native Windows file system. FSx for Windows File Server has the features, performance, and compatibility to easily lift and shift enterprise applications to the AWS Cloud.</p>
+<h3 id="amazon-s3">Amazon S3<a class="headerlink" href="#amazon-s3" title="Permanent link">&para;</a></h3>
+<p><em>Amazon Simple Storage Service (Amazon S3)</em> is a service that provides object-level storage. Amazon S3 stores data as objects in buckets.</p>
+<p>You can upload any type of file to Amazon S3, such as images, videos, text files, and so on. For example, you might use Amazon S3 to store backup files, media files for a website, or archived documents. Amazon S3 offers unlimited storage space. The maximum file size for an object in Amazon S3 is 5 TB.</p>
+<p>When you upload a file to Amazon S3, you can set permissions to control visibility and access to it. You can also use the Amazon S3 versioning feature to track changes to your objects over time.</p>
+<p>In <em>object storage</em>, each object consists of data, metadata, and a key.</p>
+<p>The data might be an image, video, text document, or any other type of file. Metadata contains information about what the data is, how it is used, the object size, and so on. An object's key is its unique identifier.</p>
+<p>In <em>file storage</em>, multiple clients (such as users, applications, servers, and so on) can access data that is stored in shared file folders. In this approach, a storage server uses block storage with a local file system to organize files. Clients access data through file paths.</p>
+<p>Compared to block storage and object storage, file storage is ideal for use cases in which a large number of services and resources need to access the same data at the same time.</p>
+<ul>
+<li>Object sharing – the ability to make any object publicly available via a URL.</li>
+<li>Lifecycle management – set rules to transfer objects between storage classes at defined time intervals.</li>
+<li>Versioning – automatically keep multiple versions of an object (when enabled).</li>
+<li>Encryption can be enabled for bucket.</li>
+<li>Data is secured using ACLs and bucket policies.</li>
+</ul>
+<h4 id="s3-charges">S3 Charges:<a class="headerlink" href="#s3-charges" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Storage.</li>
+<li>Requests.</li>
+<li>Storage management pricing.</li>
+<li>Data transfer pricing.</li>
+<li>Transfer acceleration.</li>
+</ul>
+<p><em>Typical use cases include:</em></p>
+<ul>
+<li><em>Backup and Storage</em> – Provide data backup and storage services for others.</li>
+<li><em>Application Hosting</em> – Provide services that deploy, install, and manage web applications.</li>
+<li><em>Media Hosting</em> – Build a redundant, scalable, and highly available infrastructure that hosts video, photo, or music uploads and downloads.</li>
+<li><em>Software Delivery</em> – Host your software applications that customers can download.</li>
+<li><em>Static Website</em> – you can configure a static website to run from an S3 bucket.</li>
+</ul>
+<p><em>Amazon S3 storage classes</em></p>
+<p>With Amazon S3, you pay only for what you use. You can choose from a range of storage classes to select a fit for your business and cost needs. When selecting an Amazon S3 storage class, consider these two factors:</p>
+<ul>
+<li>How often you plan to retrieve your data</li>
+<li>
+<p>How available you need your data to be</p>
+</li>
+<li>
+<p><strong>S3 Standard</strong></p>
+</li>
+<li>
+<p>Designed for frequently accessed data</p>
+</li>
+<li>Stores data in a minimum of three Availability Zones</li>
+</ul>
+<p>Amazon S3 Standard provides high availability for objects. This makes it a good choice for a wide range of use cases, such as websites, content distribution, and data analytics. Amazon S3 Standard has a higher cost than other storage classes intended for infrequently accessed data and archival storage.</p>
+<ol>
+<li>
+<p><strong>S3 Standard-Infrequent Access (S3 Standard-IA)</strong></p>
+</li>
+<li>
+<p>Ideal for infrequently accessed data</p>
+</li>
+<li>Similar to Amazon S3 Standard but has a lower storage price and higher retrieval price</li>
+</ol>
+<p>Amazon S3 Standard-IA is ideal for data infrequently accessed but requires high availability when needed. Both Amazon S3 Standard and Amazon S3 Standard-IA store data in a minimum of three Availability Zones. Amazon S3 Standard-IA provides the same level of availability as Amazon S3 Standard but with a lower storage price and a higher retrieval price.</p>
+<ol>
+<li>
+<p><strong>S3 One Zone-Infrequent Access (S3 One Zone-IA)</strong></p>
+</li>
+<li>
+<p>Stores data in a single Availability Zone</p>
+</li>
+<li>Has a lower storage price than Amazon S3 Standard-IA</li>
+</ol>
+<p>Compared to S3 Standard and S3 Standard-IA, which store data in a minimum of three Availability Zones, S3 One Zone-IA stores data in a single Availability Zone. This makes it a good storage class to consider if the following conditions apply:</p>
+<ul>
+<li>You want to save costs on storage.</li>
+<li>
+<p>You can easily reproduce your data in the event of an Availability Zone failure.</p>
+</li>
+<li>
+<p><strong>S3 Intelligent-Tiering</strong></p>
+</li>
+<li>
+<p>Ideal for data with unknown or changing access patterns</p>
+</li>
+<li>Requires a small monthly monitoring and automation fee per object</li>
+</ul>
+<p>In the S3 Intelligent-Tiering storage class, Amazon S3 monitors objects' access patterns. If you haven't accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.</p>
+<ol>
+<li>
+<p><strong>S3 Glacier Instant Retrieval</strong></p>
+</li>
+<li>
+<p>Works well for archived data that requires immediate access</p>
+</li>
+<li>Can retrieve objects within a few milliseconds</li>
+</ol>
+<p>When you decide between the options for archival storage, consider how quickly you must retrieve the archived objects. You can retrieve objects stored in the S3 Glacier Instant Retrieval storage class within milliseconds, with the same performance as S3 Standard.</p>
+<ol>
+<li>
+<p><strong>S3 Glacier Flexible Retrieval</strong></p>
+</li>
+<li>
+<p>Low-cost storage designed for data archiving</p>
+</li>
+<li>Able to retrieve objects within a few minutes to hours</li>
+</ol>
+<p>S3 Glacier Flexible Retrieval is a low-cost storage class that is ideal for data archiving. For example, you might use this storage class to store archived customer records or older photos and video files. You can retrieve your data from S3 Glacier Flexible Retrieval from 1 minute to 12 hours.</p>
+<ol>
+<li>
+<p><strong>S3 Glacier Deep Archive</strong></p>
+</li>
+<li>
+<p>Lowest-cost object storage class ideal for archiving</p>
+</li>
+<li>Able to retrieve objects within 12 hours</li>
+</ol>
+<p>S3 Deep Archive supports long-term retention and digital preservation for data that might be accessed once or twice in a year. This storage class is the lowest-cost storage in the AWS Cloud, with data retrieval from 12 to 48 hours. All objects from this storage class are replicated and stored across at least three geographically dispersed Availability Zones.</p>
+<ol>
+<li>
+<p><strong>S3 Outposts</strong></p>
+</li>
+<li>
+<p>Creates S3 buckets on Amazon S3 Outposts</p>
+</li>
+<li>Makes it easier to retrieve, store, and access data on AWS Outposts</li>
+</ol>
+<p>Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment. Amazon S3 Outposts is designed to store data durably and redundantly across multiple devices and servers on your Outposts. It works well for workloads with local data residency requirements that must satisfy demanding performance needs by keeping data close to on-premises applications.</p>
+<h3 id="aws-storage-gateway">AWS Storage Gateway*<a class="headerlink" href="#aws-storage-gateway" title="Permanent link">&para;</a></h3>
+<p><em>AWS Storage Gateway</em> is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. Storage Gateway provides a standard set of storage protocols such as iSCSI, SMB, and NFS, which allow you to use AWS storage without rewriting your existing applications.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Georgette Webb
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "announce.dismiss", "navigation.top", "search.suggest", "search.share", "search.highlight", "content.tabs.link", "content.tooltips", "content.code.select", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

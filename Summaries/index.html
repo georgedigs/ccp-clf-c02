@@ -1,0 +1,2263 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cloud Practitioner - CLF-C02">
+      
+      
+        <meta name="author" content="Georgette Webb">
+      
+      
+      
+        <link rel="prev" href="../Interacting%20with%20AWS%20Services/">
+      
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Summaries - Cloud Practitioner - CLF-C02</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#summaries" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-header__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud Practitioner - CLF-C02
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Summaries
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-nav__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    Cloud Practitioner - CLF-C02
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Application%20Integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Application Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloud%20Financial%20Management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Financial Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Customer%20Engagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customer Engagement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developer%20Tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../End%20User%20Computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    End User Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontend%20Web%20and%20Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend Web and Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Internet%20of%20Things%20%28IoT%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internet of Things (IoT)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine%20Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Management%20and%20Governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Management and Governance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Migration%20and%20Transfer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migration and Transfer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Networking%20and%20Content%20Delivery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking and Content Delivery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security%2C%20Identity%2C%20and%20Compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security, Identity, and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Serverless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serverless
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AWS%20Global%20Infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Global Infrastructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interacting%20with%20AWS%20Services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interacting with AWS Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Summaries
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Summaries
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-cloud-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Cloud Computing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-computing-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Computing Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Computing Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure-as-a-service-iaas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrastructure as a Service (IaaS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-as-a-service-paas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform as a Service (PaaS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-as-a-service-saas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software as a Service (SaaS)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-cloud-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages of Cloud Computing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advantages of Cloud Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#six-advantages-of-cloud-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Six Advantages of Cloud Computing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trade-upfront-expense-for-variable-expense" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trade Upfront Expense for Variable Expense
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefit-from-massive-economies-of-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefit from Massive Economies of Scale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-guessing-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Guessing Capacity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increase-speed-and-agility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Increase Speed and Agility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-spending-money-running-and-maintaining-data-centers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Spending Money Running and Maintaining Data Centers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-global-in-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Go Global in Minutes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-cloud-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Cloud Deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Cloud Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-common-types-of-cloud-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three Common Types of Cloud Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hybrid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-premises" class="md-nav__link">
+    <span class="md-ellipsis">
+      On-Premises
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-in-the-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compute in the Cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-global-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Global Infrastructure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Networking:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Networking:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Hardening
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-group-and-a-network-acl-key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Group and a Network ACL Key Differences:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subnets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-name-system-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Name System (DNS)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-and-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage and Databases:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3-and-amazon-ebs-key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3 and Amazon EBS Key Differences:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      EBS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ebs-and-amazon-efs-key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EBS and Amazon EFS Key Differences:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ebs-vs-efs" class="md-nav__link">
+    <span class="md-ellipsis">
+      EBS Vs EFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EBS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-efs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EFS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Databases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Databases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relational-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relational databases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relational-databases-vs-nonrelational-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relational databases Vs Nonrelational databases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nonrelational-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nonrelational databases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-rds-and-amazon-dynamodb-key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon RDS and Amazon DynamoDB Key Differences:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-rds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon RDS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-rds-vs-amazon-dynamodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon RDS Vs Amazon DynamoDB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-dynamodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon DynamoDB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-responsibility-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Responsibility Model:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Responsibility Model:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-security-of-the-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS: Security of the cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customers-security-in-the-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customers: Security in the cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-web-services-aws-security-of-the-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Web Services (AWS) Security of the cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customers-security-in-the-cloud_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customers: Security in the cloud
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-compliance-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Compliance Center
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#denial-of-service-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Denial-of-Service Attacks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-and-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring and Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring and Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-aws-cloudtrail-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: AWS CloudTrail event
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pricing-and-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing and Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pricing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pricing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-free-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Free Tier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pay-for-what-you-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pay for what you use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pay-less-when-you-reserve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pay less when you reserve.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pay-less-with-volume-based-discounts-when-you-use-more" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pay less with volume-based discounts when you use more.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-pricing-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Pricing Calculator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pricing-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing Examples:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support Plans
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Support Plans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#developer-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-on-ramp-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enterprise On-Ramp Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enterprise Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#developer-business-enterprise-on-ramp-and-enterprise-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer, Business, Enterprise On-Ramp, and Enterprise Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-account-manager-tam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Account Manager (TAM)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-and-innovation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration and Innovation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migration and Innovation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-cloud-adoption-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Cloud Adoption Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#people-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      People Perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Governance Perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations Perspective
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migration Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-strategies-for-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 strategies for migration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-cloud-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Cloud Journey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-aws-well-architected-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      The AWS Well-Architected Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The AWS Well-Architected Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-well-architected-framework-is-based-on-six-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Well-Architected Framework is based on six pillars:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Summaries</h1>
+
+<h2 id="summaries">Summaries<a class="headerlink" href="#summaries" title="Permanent link">&para;</a></h2>
+<h3 id="what-is-cloud-computing">What is Cloud Computing<a class="headerlink" href="#what-is-cloud-computing" title="Permanent link">&para;</a></h3>
+<p>The on-demand delivery of IT resources over the internet with pay-as-you-go pricing.</p>
+<p>This means that you can make requests for IT resources like compute, networking, storage, analytics, or other types of resources, and then they're made available for you on demand. You don't pay for the resource upfront. Instead, you just provision and pay at the end of the month.</p>
+<h3 id="cloud-computing-models">Cloud Computing Models<a class="headerlink" href="#cloud-computing-models" title="Permanent link">&para;</a></h3>
+<p>There are 3 common types of cloud computing model:</p>
+<ol>
+<li>Infrastructure as a service (IaaS).</li>
+<li>Platform as a service (PaaS).</li>
+<li>Software as a service (SaaS).</li>
+</ol>
+<h4 id="infrastructure-as-a-service-iaas">Infrastructure as a Service (IaaS)<a class="headerlink" href="#infrastructure-as-a-service-iaas" title="Permanent link">&para;</a></h4>
+<p>Infrastructure as a Service (IaaS) contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space.</p>
+<p>IaaS provides you with the highest level of flexibility and management control over your IT resources and is very similar to the existing IT resources that many IT departments and developers are familiar with today.</p>
+<h4 id="platform-as-a-service-paas">Platform as a Service (PaaS)<a class="headerlink" href="#platform-as-a-service-paas" title="Permanent link">&para;</a></h4>
+<p>Platform as a Service (PaaS) removes the need for your organization to manage the underlying infrastructure (usually hardware and operating systems) and allows you to focus on the deployment and management of your applications.</p>
+<p>This helps you be more efficient as you don't need to worry about resource procurement, capacity planning, software maintenance, patching, or any of the other undifferentiated heavy lifting involved in running your application.</p>
+<h4 id="software-as-a-service-saas">Software as a Service (SaaS)<a class="headerlink" href="#software-as-a-service-saas" title="Permanent link">&para;</a></h4>
+<p>Software as a Service (SaaS) provides you with a completed product that is run and managed by the service provider. In most cases, people referring to Software as a Service are referring to end-user applications.</p>
+<p>With a SaaS offering you do not have to think about how the service is maintained or how the underlying infrastructure is managed; you only need to think about how you will use that piece of software.</p>
+<p>A common example of a SaaS application is web-based email which you can use to send and receive email without having to manage feature additions to the email product or maintain the servers and operating systems that the email program is running on.</p>
+<p>SaaS provides high availability, fault tolerance, scalability and elasticity.</p>
+<h3 id="advantages-of-cloud-computing">Advantages of Cloud Computing<a class="headerlink" href="#advantages-of-cloud-computing" title="Permanent link">&para;</a></h3>
+<p>Operating in the AWS Cloud offers many benefits over computing in on-premises or hybrid environments.</p>
+<h4 id="six-advantages-of-cloud-computing">Six Advantages of Cloud Computing<a class="headerlink" href="#six-advantages-of-cloud-computing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Trade upfront expense for variable expense.</li>
+<li>Benefit from massive economies of scale.</li>
+<li>Stop guessing capacity.</li>
+<li>Increase speed and agility.</li>
+<li>Stop spending money running and maintaining data centers.</li>
+<li>
+<p>Go global in minutes.</p>
+</li>
+<li>
+<h4 id="trade-upfront-expense-for-variable-expense">Trade Upfront Expense for Variable Expense<a class="headerlink" href="#trade-upfront-expense-for-variable-expense" title="Permanent link">&para;</a></h4>
+</li>
+</ul>
+<p>Upfront expenses include data centers, physical servers, and other resources that you would need to invest in before using computing resources.</p>
+<p>Instead of investing heavily in data centers and servers before you know how you're going to use them, you can pay only when you consume computing resources.</p>
+<ol>
+<li>
+<h4 id="benefit-from-massive-economies-of-scale">Benefit from Massive Economies of Scale<a class="headerlink" href="#benefit-from-massive-economies-of-scale" title="Permanent link">&para;</a></h4>
+</li>
+</ol>
+<p>By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers aggregates in the cloud, providers such as AWS can achieve higher economies of scale. Economies of scale translate into lower pay-as-you-go prices.</p>
+<ol>
+<li>
+<h4 id="stop-guessing-capacity">Stop Guessing Capacity<a class="headerlink" href="#stop-guessing-capacity" title="Permanent link">&para;</a></h4>
+</li>
+</ol>
+<p>With cloud computing, you don't have to predict how much infrastructure capacity you will need before deploying an application.</p>
+<p>For example, you can launch Amazon Elastic Compute Cloud (Amazon EC2) instances when needed and pay only for the compute time you use. Instead of paying for resources that are unused or dealing with limited capacity, you can access only the capacity that you need, and scale in or out in response to demand.</p>
+<ol>
+<li>
+<h4 id="increase-speed-and-agility">Increase Speed and Agility<a class="headerlink" href="#increase-speed-and-agility" title="Permanent link">&para;</a></h4>
+</li>
+</ol>
+<p>The flexibility of cloud computing makes it easier for you to develop and deploy applications. This flexibility also provides your development teams with more time to experiment and innovate.</p>
+<ol>
+<li>
+<h4 id="stop-spending-money-running-and-maintaining-data-centers">Stop Spending Money Running and Maintaining Data Centers<a class="headerlink" href="#stop-spending-money-running-and-maintaining-data-centers" title="Permanent link">&para;</a></h4>
+</li>
+</ol>
+<p>Cloud computing in data centers often requires you to spend more money and time managing infrastructure and servers. A benefit of cloud computing is the ability to focus less on these tasks and more on your applications and customers.</p>
+<ol>
+<li>
+<h4 id="go-global-in-minutes">Go Global in Minutes<a class="headerlink" href="#go-global-in-minutes" title="Permanent link">&para;</a></h4>
+</li>
+</ol>
+<p>The AWS Cloud global footprint enables you to quickly deploy applications to customers around the world, while providing them with low latency.</p>
+<h3 id="types-of-cloud-deployment">Types of Cloud Deployment<a class="headerlink" href="#types-of-cloud-deployment" title="Permanent link">&para;</a></h3>
+<h4 id="three-common-types-of-cloud-deployment">Three Common Types of Cloud Deployment<a class="headerlink" href="#three-common-types-of-cloud-deployment" title="Permanent link">&para;</a></h4>
+<ol>
+<li><em>Public Cloud</em> – e.g. AWS, Microsoft Azure, Google Cloud Platform (GCP).</li>
+<li><em>Hybrid Cloud</em> – a mixture of public and private clouds.</li>
+<li><em>Private Cloud (on-premises)</em> – a cloud managed in your own data center, e.g. Hyper-V, OpenStack, VMware.</li>
+</ol>
+<h4 id="public-cloud">Public Cloud<a class="headerlink" href="#public-cloud" title="Permanent link">&para;</a></h4>
+<p>A cloud-based application is fully deployed in the cloud and all parts of the application run in the cloud. Applications in the cloud have either been created in the cloud or have been migrated from an existing infrastructure to take advantage of the benefits of cloud computing.</p>
+<p>Cloud-based applications can be built on low-level infrastructure pieces or can use higher level services that provide abstraction from the management, architecting, and scaling requirements of core infrastructure.</p>
+<h4 id="hybrid">Hybrid<a class="headerlink" href="#hybrid" title="Permanent link">&para;</a></h4>
+<p>A hybrid deployment is a way to connect infrastructure and applications between cloud-based resources and existing resources that are not located in the cloud.</p>
+<p>The most common method of hybrid deployment is between the cloud and existing on-premises infrastructure to extend, and grow, an organization's infrastructure into the cloud while connecting cloud resources to the internal system.</p>
+<h4 id="on-premises">On-Premises<a class="headerlink" href="#on-premises" title="Permanent link">&para;</a></h4>
+<p>The deployment of resources on-premises, using virtualization and resource management tools, is sometimes called the "private cloud."</p>
+<p>On-premises deployment doesn't provide many of the benefits of cloud computing but is sometimes sought for its ability to provide dedicated resources.</p>
+<p>In most cases this deployment model is the same as legacy IT infrastructure while using application management and virtualization technologies to try and increase resource utilization.</p>
+<h3 id="compute-in-the-cloud">Compute in the Cloud<a class="headerlink" href="#compute-in-the-cloud" title="Permanent link">&para;</a></h3>
+<p>EC2, you can dynamically spin up and spin down virtual servers called EC2 instances. When you launch an EC2 instance, you choose the instance family. The instance family determines the hardware the instance runs on.</p>
+<p>And you can have instances that are built for your specific purpose. The categories are general purpose, compute optimized, memory optimized, accelerated computing, and storage optimized.</p>
+<p>You can scale your EC2 instances either vertically by resizing the instance, or horizontally by launching new instances and adding them to the pool. You can set up automated horizontal scaling, using Amazon EC2 Auto Scaling.</p>
+<p>Once you've scaled your EC2 instances out horizontally, you need something to distribute the incoming traffic across those instances. This is where the Elastic Load Balancer comes into play.</p>
+<p>EC2 instances have different pricing models. There is On-Demand, which is the most flexible and has no contract, spot pricing, which allows you to utilize unused capacity at a discounted rate, Savings Plans or Reserved Instances, which allow you to enter into a contract with AWS to get a discounted rate when you commit to a certain level of usage, and Savings Plans which apply to AWS Lambda, and AWS Fargate, as well as EC2 instances.</p>
+<p>We also covered messaging services. There is Amazon Simple Queue Service or SQS. This service allows you to decouple system components. Messages remain in the queue until they are either consumed or deleted. Amazon Simple Notification Service or SNS, is used for sending messages like emails, text messages, push notifications, or even HTTP requests. Once a message is published, it is sent to all of these subscribers.</p>
+<p>You also learned that AWS has different types of compute services beyond just virtual servers like EC2. There are container services like Amazon Elastic Container Service, or ECS. And there's Amazon Elastic Kubernetes Service, or EKS. Both of which are container orchestration tools. You can use these tools with EC2 instances, but if you don't want to manage that, you don't need to.</p>
+<p>You can use AWS Fargate, which allows you to run your containers on top of a serverless compute platform. Then there is AWS Lambda, which allows you to just upload your code, and configure it to run based on triggers. And you only get charged for when the code is actually running. No containers, no virtual machines. Just code and configuration.</p>
+<h3 id="aws-global-infrastructure">AWS Global Infrastructure<a class="headerlink" href="#aws-global-infrastructure" title="Permanent link">&para;</a></h3>
+<p>Logical clusters of data centers make up Availability Zones, Availability Zones in turn make up Regions, and those are spread globally. You then choose what Regions and Availability Zones you want to operate out of and as a best practice, you should always deploy infrastructure across at least two Availability Zones. And some AWS services like Elastic Load Balancing, Amazon SQS, and Amazon SNS already do this for you.</p>
+<p>Edge locations and how you can deploy content there to speed up delivery to your customers. We even touched upon edge devices like AWS Outposts which allow you to run AWS infrastructure right in your own data center.</p>
+<p>how to provision AWS resources through various options, such as the AWS Management Console, the SDK, CLI, AWS Elastic Beanstalk, and AWS CloudFormation, where you learned how you can set up your infrastructure as code.</p>
+<h3 id="networking">Networking:<a class="headerlink" href="#networking" title="Permanent link">&para;</a></h3>
+<h4 id="network-hardening">Network Hardening<a class="headerlink" href="#network-hardening" title="Permanent link">&para;</a></h4>
+<p>AWS has a wide range of tools that cover every layer of security: network hardening, application security, user identity, authentication and authorization, distributed denial-of-service or DDoS prevention, data integrity, encryption.</p>
+<p>The public subnets have access to the internet gateway; the private subnets do not.</p>
+<p>But subnets can also control traffic permissions. Packets are messages from the internet, and every packet that crosses the subnet boundaries gets checked against something called a network access control list or network ACL. This check is to see if the packet has permissions to either leave or enter the subnet based on who it was sent from and how it's trying to communicate.</p>
+<p><em>network ACLs</em></p>
+<p>A network ACL is a virtual firewall that controls inbound and outbound traffic at the subnet level. Network ACLs perform <strong>stateless</strong> packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound. When a packet response for that request comes back to the subnet, the network ACL does not remember your previous request. The network ACL checks the packet response against its list of rules to determine whether to allow or deny. After a packet has entered a subnet, it must have its permissions evaluated for resources within the subnet, such as Amazon EC2 instances.</p>
+<p>You can think of <strong>network ACLs</strong> as passport control officers. If you're on the approved list, you get through. If you're not on the list, or if you're explicitly on the do-not-enter list, then you get blocked. Network ACLs check traffic going into and leaving a subnet, just like passport control. The list gets checked on your way into a country and on the way out. And just because you were let in doesn't necessarily mean they're gonna let you out. Approved traffic can be sent on its way, and potentially harmful traffic, like attempts to gain control of a system through administrative requests, they get blocked before they ever touch the target. You can't hack what you can't touch.</p>
+<p>Now, this sounds like great security, but it doesn't answer all of the network control issues. Because a network ACL only gets to evaluate a packet if it crosses a subnet boundary, in or out. It doesn't evaluate if a packet can reach a specific EC2 instance or not. Sometimes, you'll have multiple EC2 instances in the same subnet, but they might have different rules around who can send them messages, what port those messages are allowed to be sent to. So, you need instance level network security as well.</p>
+<p>By default, your account's default network ACL allows all inbound and outbound traffic, but you can modify it by adding your own rules. For custom network ACLs, all inbound and outbound traffic is denied until you add rules to specify which traffic should be allowed. Additionally, all network ACLs have an explicit deny rule. This rule ensures that if a packet doesn't match any of the other rules on the list, the packet is denied.</p>
+<p><em>security groups</em></p>
+<p>A security group is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance. By default, a security group denies all inbound traffic and allows all outbound traffic. You can add custom rules to configure which traffic should be allowed; any other traffic would then be denied. Security groups perform <strong>stateful</strong> packet filtering. They remember previous decisions made for incoming packets. When a packet response for that request returns to the instance, the security group remembers your previous request. The security group allows the response to proceed, regardless of inbound security group rules.</p>
+<p>To solve instance level access questions, we introduce <strong>security groups</strong>. Every EC2 instance, when it's launched, automatically comes with a security group. And by default, the security group does not allow any traffic into the instance at all. All ports are blocked; all IP addresses sending packets are blocked. That's very secure, but perhaps not very useful. If you want an instance to actually accept traffic from the outside, like say, a message from a front end instance or a message from the Internet. So obviously, you can modify the security group to accept a specific type of traffic. In the case of a website, you want web-based traffic or HTTPS to be accepted but not other types of traffic, say an operating system or administration requests.</p>
+<h4 id="security-group-and-a-network-acl-key-differences">Security Group and a Network ACL Key Differences:<a class="headerlink" href="#security-group-and-a-network-acl-key-differences" title="Permanent link">&para;</a></h4>
+<p>The key difference between a security group and a network ACL is the security group is stateful, meaning, as we talked about, it has some kind of a memory when it comes to who to allow in or out, and the network ACL is stateless, which remembers nothing and checks every single packet that crosses its border regardless of any circumstances. With both network ACLs and security groups, you can configure custom rules for the traffic in your VPC. As you continue to learn more about AWS security and networking, make sure to understand the differences between network ACLs and security groups.</p>
+<h4 id="subnets">Subnets<a class="headerlink" href="#subnets" title="Permanent link">&para;</a></h4>
+<p>A subnet is a section of a VPC in which you can group resources based on security or operational needs. Subnets can be public or private.</p>
+<p><em>Public subnets</em> contain resources that need to be accessible by the public, such as an online store's website.</p>
+<p><em>Private subnets</em> contain resources that should be accessible only through your private network, such as a database that contains customers' personal information and order histories. In a VPC, subnets can communicate with each other. For example, you might have an application that involves Amazon EC2 instances in a public subnet communicating with databases that are located in a private subnet.</p>
+<h4 id="domain-name-system-dns">Domain Name System (DNS)<a class="headerlink" href="#domain-name-system-dns" title="Permanent link">&para;</a></h4>
+<p>Suppose that AnyCompany has a website hosted in the AWS Cloud. Customers enter the web address into their browser, and they are able to access the website. This happens because of <em>Domain Name System (DNS</em>**) resolution. DNS resolution involves a customer DNS resolver communicating with a company DNS server.</p>
+<p>You can think of DNS as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address.</p>
+<ol>
+<li>When you enter the domain name into your browser, this request is sent to a customer DNS resolver.</li>
+<li>The customer DNS resolver asks the company DNS server for the IP address that corresponds to AnyCompany's website.</li>
+<li>The company DNS server responds by providing the IP address for AnyCompany's website, 192.0.2.0.</li>
+</ol>
+<h3 id="storage-and-databases">Storage and Databases:<a class="headerlink" href="#storage-and-databases" title="Permanent link">&para;</a></h3>
+<h3 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h3>
+<p>The first one we learned about is Elastic Block Store volumes, and you attach those to EC2 instances so you have local storage that is not ephemeral.</p>
+<p>You learned about how S3 and how you can store objects in AWS with the click of a button or call of an API.</p>
+<h4 id="amazon-s3-and-amazon-ebs-key-differences">Amazon S3 and Amazon EBS Key Differences:<a class="headerlink" href="#amazon-s3-and-amazon-ebs-key-differences" title="Permanent link">&para;</a></h4>
+<h4 id="s3">S3<a class="headerlink" href="#s3" title="Permanent link">&para;</a></h4>
+<p>In the regional object storage corner, weighing in at unlimited storage, with individual objects at 5,000 gigabytes in size, they specialize in write once/read many, they are 99 .999 999 999% durable, they are Amazon Simple Storage Service!</p>
+<h4 id="ebs">EBS<a class="headerlink" href="#ebs" title="Permanent link">&para;</a></h4>
+<p>In the block storage corner, weighing in at sizes up to 16 tebibytes each, with a unique ability to survive the termination of their Amazon EC2 instances, they are solid state, they are spinning platters, they are Amazon Elastic Block Storage!</p>
+<h4 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h4>
+<p>Let's say you're running a photo analysis website where users upload a photo of themselves, and your application finds the animals that look just like them. You have potentially millions of animal pictures that all need to be indexed and possibly viewed by thousands of people at once. This is the perfect use case for S3. S3 is already web enabled. Every object already has a URL that you can control access rights to who can see or manage the image. It's regionally distributed, which means that it has 11 nines of durability, so no need to worry about backup strategies. S3 is your backup strategy. Plus the cost savings is substantial overrunning the same storage load on EBS. With the additional advantage of being serverless, no Amazon EC2 instances are needed. <strong>Sounds like S3 is the judge's winner here for this round.</strong></p>
+<p>You have an 80-gigabyte video file that you're making edit corrections on. To know the best storage class here, we need to understand the difference between object storage and block storage. Object storage treats any file as a complete, discreet object. Now this is great for documents, and images, and video files that get uploaded and consumed as entire objects, but every time there's a change to the object, you must re-upload the entire file. There are no delta updates. Block storage breaks those files down to small component parts or blocks. This means, for that 80-gigabyte file, when you make an edit to one scene in the film and save that change, the engine only updates the blocks where those bits live. If you're making a bunch of micro edits, using EBS, elastic block storage, is the perfect use case. If you were using S3, every time you saved the changes, the system would have to upload all 80 gigabytes, the whole thing, every time. <strong>EBS clearly wins round two.</strong></p>
+<p>This means, if you are using complete objects or only occasional changes, S3 is victorious. If you are doing complex read, write, change functions, then, absolutely, EBS is your knockout winner. Your winner depends on your individual workload. Each service is the right service for specific needs. Once you understand what you need, you will know which service is your champion!</p>
+<h4 id="amazon-ebs-and-amazon-efs-key-differences">Amazon EBS and Amazon EFS Key Differences:<a class="headerlink" href="#amazon-ebs-and-amazon-efs-key-differences" title="Permanent link">&para;</a></h4>
+<p>Amazon EBS volumes attach to EC2 instances and are an Availability Zone-level resource. In order to attach EC2 to EBS, you need to be in the same AZ. You can save files on it. You can also run a database on top of it. Or store applications on it. It's a hard drive. If you provision a two terabyte EBS volume and fill it up, it doesn't automatically scale to give you more storage. So that's EBS.</p>
+<h4 id="ebs-vs-efs">EBS Vs EFS<a class="headerlink" href="#ebs-vs-efs" title="Permanent link">&para;</a></h4>
+<p>Amazon EFS can have multiple instances reading and writing from it at the same time.</p>
+<p>But it isn't just a blank hard drive that you can write to. It is a true file system for Linux. It is also a regional resource. Meaning any EC2 instance in the Region can write to the EFS file system. As you write more data to EFS, it automatically scales. No need to provision any more volumes.</p>
+<h4 id="amazon-ebs">Amazon EBS<a class="headerlink" href="#amazon-ebs" title="Permanent link">&para;</a></h4>
+<p>An Amazon EBS volume stores data in a  <strong>single</strong>  Availability Zone.</p>
+<p>To attach an Amazon EC2 instance to an EBS volume, both the Amazon EC2 instance and the EBS volume must reside within the same Availability Zone.</p>
+<h4 id="amazon-efs">Amazon EFS<a class="headerlink" href="#amazon-efs" title="Permanent link">&para;</a></h4>
+<p>Amazon EFS is a regional service. It stores data in and across  <strong>multiple</strong>  Availability Zones.</p>
+<p>The duplicate storage enables you to access data concurrently from all the Availability Zones in the Region where a file system is located. Additionally, on-premises servers can access Amazon EFS using AWS Direct Connect.</p>
+<h3 id="databases">Databases<a class="headerlink" href="#databases" title="Permanent link">&para;</a></h3>
+<p>The various relational database options available on AWS. Or for the workloads that just need a key-value pair, we have the non-relational offering called DynamoDB.</p>
+<p>Next up was EFS for file storage use cases.</p>
+<p>We then have Amazon Redshift for all our data warehouse needs.</p>
+<p>And to aid in migration of existing databases, we have DMS or Database Migration Service</p>
+<h4 id="relational-databases">Relational databases<a class="headerlink" href="#relational-databases" title="Permanent link">&para;</a></h4>
+<p>In a <em>relational database</em>, data is stored in a way that relates it to other pieces of data.</p>
+<p>An example of a relational database might be the coffee shop's inventory management system. Each record in the database would include data for a single item, such as product name, size, price, and so on.</p>
+<p>Relational databases use structured query language (SQL) to store and query data. This approach allows data to be stored in an easily understandable, consistent, and scalable way. For example, the coffee shop owners can write a SQL query to identify all the customers whose most frequently purchased drink is a medium latte.</p>
+<p><em>Lift-and-Shift</em> and migrate your database to run on Amazon EC2. This means you have control over the same variables you do, in your on-premises environment, such as OS, memory, CPU, storage capacity, and so forth. It's a quick entry to the cloud, and you can migrate them using standard practices or using something like Database Migration Service.</p>
+<h4 id="relational-databases-vs-nonrelational-databases">Relational databases Vs Nonrelational databases<a class="headerlink" href="#relational-databases-vs-nonrelational-databases" title="Permanent link">&para;</a></h4>
+<h4 id="nonrelational-databases">Nonrelational databases<a class="headerlink" href="#nonrelational-databases" title="Permanent link">&para;</a></h4>
+<p>In a <em>nonrelational database</em>, you create tables. A table is a place where you can store and query data.</p>
+<p>Nonrelational databases are sometimes referred to as "NoSQL databases" because they use structures other than rows and columns to organize data. One type of structural approach for nonrelational databases is key-value pairs. With key-value pairs, data is organized into items (keys), and items have attributes (values). You can think of attributes as being different features of your data.</p>
+<p>In a key-value database, you can add or remove attributes from items in the table at any time. Additionally, not every item in the table has to have the same attributes.</p>
+<h4 id="amazon-rds-and-amazon-dynamodb-key-differences">Amazon RDS and Amazon DynamoDB Key Differences:<a class="headerlink" href="#amazon-rds-and-amazon-dynamodb-key-differences" title="Permanent link">&para;</a></h4>
+<h4 id="amazon-rds">Amazon RDS<a class="headerlink" href="#amazon-rds" title="Permanent link">&para;</a></h4>
+<p>In the relational corner, engineered to remove undifferentiated heavy lifting from your database administrators with automatic high availability and recovery provided. You control the data, you control the schema, you control the network. You are running Amazon RDS.</p>
+<h4 id="amazon-rds-vs-amazon-dynamodb">Amazon RDS Vs Amazon DynamoDB<a class="headerlink" href="#amazon-rds-vs-amazon-dynamodb" title="Permanent link">&para;</a></h4>
+<h4 id="amazon-dynamodb">Amazon DynamoDB<a class="headerlink" href="#amazon-dynamodb" title="Permanent link">&para;</a></h4>
+<p>The NoSQL corner, using a key value pair that requires no advanced schema, able to operate as a global database at the touch of a button. It has massive throughput. It has petabyte scale potential. It has granular API access. It is Amazon DynamoDB.</p>
+<h4 id="use-cases_1">Use Cases<a class="headerlink" href="#use-cases_1" title="Permanent link">&para;</a></h4>
+<p><strong>Round One</strong> Relational databases have been around since the moment businesses started using computers. Being able to build complex analysis of data spread across multiple tables, is the strength of any relational system. In this round, you have a sales supply chain management system that you have to analyze for weak spots. Using RDS is the clear winner here because it's built for business analytics, because you need complex relational joins. Round one easily goes to RDS.</p>
+<p><strong>Round two</strong>, the use case, pretty much anything else. Now that sounds weird, but despite what your standalone legacy database vendor would have you believe, most of what people use expensive relational databases for, has nothing to do with complex relationships. In fact, a lot of what people put into these databases ends up just being look-up tables.</p>
+<p>Imagine you have an employee contact list: names, phone numbers, emails, employee IDs. Well, this is all single table territory. I could use a relational database for this, but the things that make relational databases great, all of that complex functionality, creates overhead and lag and expense if you're not actually using it. This is where non-relational databases, Dynamo DB, delivers the knockout punch. By eliminating all the overhead, DynamoDB allows you to build powerful, incredibly fast databases where you don't need complex joint functionality. DynamoDB comes out the undisputed champion.</p>
+<h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h3>
+<h3 id="shared-responsibility-model">Shared Responsibility Model:<a class="headerlink" href="#shared-responsibility-model" title="Permanent link">&para;</a></h3>
+<ul>
+<li>AWS is responsible for the security <strong>of</strong> the cloud.</li>
+<li>The Customer is responsible for the security <strong>in</strong> the cloud.</li>
+</ul>
+<h4 id="aws-security-of-the-cloud">AWS: Security <strong>of</strong> the cloud<a class="headerlink" href="#aws-security-of-the-cloud" title="Permanent link">&para;</a></h4>
+<p>AWS is responsible for security of the cloud.</p>
+<p>AWS operates, manages, and controls the components at all layers of infrastructure. This includes areas such as the host operating system, the virtualization layer, and even the physical security of the data centers from which services operate.</p>
+<p>AWS is responsible for protecting the global infrastructure that runs all of the services offered in the AWS Cloud. This infrastructure includes AWS Regions, Availability Zones, and edge locations.</p>
+<p>AWS manages the security of the cloud, specifically the physical infrastructure that hosts your resources, which include:</p>
+<ul>
+<li>Physical security of data centers</li>
+<li>Hardware and software infrastructure</li>
+<li>Network infrastructure</li>
+<li>Virtualization infrastructure</li>
+</ul>
+<p>Although you cannot visit AWS data centers to see this protection firsthand, AWS provides several reports from third-party auditors. These auditors have verified its compliance with a variety of computer security standards and regulations.</p>
+<h4 id="customers-security-in-the-cloud">Customers: Security <strong>in</strong> the cloud<a class="headerlink" href="#customers-security-in-the-cloud" title="Permanent link">&para;</a></h4>
+<p>Customers are responsible for the security of everything that they create and put in the AWS Cloud.</p>
+<p>When using AWS services, you, the customer, maintain complete control over your content. You are responsible for managing security requirements for your content, including which content you choose to store on AWS, which AWS services you use, and who has access to that content. You also control how access rights are granted, managed, and revoked.</p>
+<p>The security steps that you take will depend on factors such as the services that you use, the complexity of your systems, and your company's specific operational and security needs. Steps include selecting, configuring, and patching the operating systems that will run on Amazon EC2 instances, configuring security groups, and managing user accounts.</p>
+<h4 id="amazon-web-services-aws-security-of-the-cloud">Amazon Web Services (AWS) Security <strong>of</strong> the cloud<a class="headerlink" href="#amazon-web-services-aws-security-of-the-cloud" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Hardware</strong>: Regions, Availability Zones, Edge Locations</li>
+<li><strong>Software</strong>: Compute, storage, database, networking</li>
+</ul>
+<h4 id="customers-security-in-the-cloud_1">Customers: Security <strong>in</strong> the cloud<a class="headerlink" href="#customers-security-in-the-cloud_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Client-side data encryption, server-side data encryption, and networking traffic protection</li>
+<li>Operating systems, and network and firewall configuration</li>
+<li>Platform, applications, Identity and Access Management (IAM)</li>
+<li>Customer data</li>
+</ul>
+<p><em>Encryption</em> in AWS, you are the owner of your data, and you are responsible for security. That means you need to pay attention to encryption, in transit and at rest.</p>
+<h3 id="compliance">Compliance<a class="headerlink" href="#compliance" title="Permanent link">&para;</a></h3>
+<p>AWS has already built out data center infrastructure and networking following industry best practices for security, and as an AWS customer, you inherit all the best practices of AWS policies, architecture, and operational processes.</p>
+<p>AWS complies with a long list of assurance programs that you can find online. This means that segments of your compliance have already been completed, and you can focus on meeting compliance within your own architectures that you build on top of AWS. The next thing to know in regards to compliance and AWS, is that the Region you choose to operate out of, might help you meet compliance regulations. If you can only legally store data in the country that the data is from, you can choose a Region that makes sense for you and AWS will not automatically replicate data across Regions.</p>
+<p>You also should be very aware of the fact that you own your data in AWS. As shown in the AWS shared responsibility model, you have complete control over the data that you store in AWS. You can employ multiple different encryption mechanisms to keep your data safe, and that varies from service to service. So, if you need specific standards for data storage, you can devise a way to either reach those requirements by building it yourself on top of AWS or using the features that already exist in many services. For a lot of services, enabling data protection is a configuration setting on the resource.</p>
+<p>AWS also offers multiple whitepapers and documents that you can download and use for compliance reports. Since you aren't running the data center yourself, you can essentially request that AWS provides you with documentation proving that they are following best practices for security and compliance.</p>
+<h4 id="aws-compliance-center">AWS Compliance Center<a class="headerlink" href="#aws-compliance-center" title="Permanent link">&para;</a></h4>
+<p>Check out the AWS Compliance Center in order to find compliance information all in one place. It will show you compliance enabling services as well as documentation like the AWS Risk and Security Whitepaper, which you should read to ensure that you understand security and compliance with AWS.</p>
+<p>we follow a shared responsibility. The underlying platform is secure and AWS can provide documentation on what types of compliance requirements they meet, through services like AWS Artifact and whitepapers. But, beyond that, what you build on AWS is up to you. You control the architecture of your applications and the solutions you build, and they need to be built with compliance, security, and the shared responsibility model in mind.</p>
+<p><em>AWS compliance uses third-party auditors</em> to prove its adherence to a wide variety of compliance programs. You can use the AWS Compliance Center to find more information on compliance and AWS Artifact to gain access to compliance documents. The compliance requirements you have will vary from application to application and between areas of operation.</p>
+<h4 id="denial-of-service-attacks">Denial-of-Service Attacks<a class="headerlink" href="#denial-of-service-attacks" title="Permanent link">&para;</a></h4>
+<p>A <em>denial-of-service (DoS) attack</em> is a deliberate attempt to make a website or application unavailable to users.</p>
+<p>In a <em>distributed denial-of-service (DDoS)</em> attack, multiple sources are used to start an attack that aims to make a website or application unavailable. This can come from a group of attackers, or even a single attacker. The single attacker can use multiple infected computers (also known as "bots") to send excessive traffic to a website or application.</p>
+<p>To help minimize the effect of DoS and DDoS attacks on your applications, you can use AWS Shield.</p>
+<p><em>Distributed denial-of-service attacks</em>, or DDoS attacks, and how to combat them with AWS using tools like ELB, security groups, AWS Shield, and AWS WAF.</p>
+<h3 id="iam">IAM<a class="headerlink" href="#iam" title="Permanent link">&para;</a></h3>
+<p>With <em>IAM</em>, you have users, groups, roles, and policies. Users log in with a username and password and by default they have no permissions. Groups are groupings of users and roles are identities that you can assume to gain access to temporary credentials and permissions for a configurable amount of time. In order to give permissions to an identity, you need to create policies that either explicitly allow or deny a specific action in AWS. <em>With IAM also comes identity federation</em>. If you have an existing corporate identity store, you can federate those users to AWS, using role based access, which allows your users to use one login for both your corporate systems as well as AWS. One final point to remember about IAM is that you should make sure that you turn on <em>multi-factor Authentication</em> for users, but especially for your root user which has all the permissions by default and cannot be restricted.</p>
+<p><em>AWS Organizations</em>. With AWS, it's likely you'll have multiple accounts. Accounts are commonly used to isolate workloads, environments, teams, or applications. AWS Organizations helps you manage multiple accounts in a hierarchical fashion.</p>
+<p>Use the <em>least privilege principle</em> when scoping permissions for users and roles in IAM, encrypt your data at every layer, both in transit and at rest. And make sure you use AWS services to protect your environment.</p>
+<h3 id="monitoring-and-analytics">Monitoring and Analytics<a class="headerlink" href="#monitoring-and-analytics" title="Permanent link">&para;</a></h3>
+<h4 id="example-aws-cloudtrail-event">Example: AWS CloudTrail event<a class="headerlink" href="#example-aws-cloudtrail-event" title="Permanent link">&para;</a></h4>
+<p>Suppose that the coffee shop owner is browsing through the AWS Identity and Access Management (IAM) section of the AWS Management Console. They discover that a new IAM user named Mary was created, but they do not know who, when, or which method created the user.</p>
+<p>To answer these questions, the owner navigates to AWS CloudTrail.</p>
+<p>In the CloudTrail Event History section, the owner applies a filter to display only the events for the "CreateUser" API action in IAM. The owner locates the event for the API call that created an IAM user for Mary. This event record provides complete details about what occurred:</p>
+<p>On January 1, 2020 at 9:00 AM, IAM user John created a new IAM user (Mary) through the AWS Management Console.</p>
+<p><em>CloudWatch</em> can provide near real-time understanding of how your system is behaving, including being alerted to conditions that require your attention. CloudWatch also gives you the ability to look at those metrics over time as you tune your system for maximum performance.</p>
+<p><em>CloudTrail</em> can help you know exactly who did what, when, and from where. It answers all of your AWS auditing questions, except why they did it.</p>
+<p><em>Trusted Advisor</em> that compiles a quick dashboard of over 40 common concerns around cost, performance, security, and resilience in an actionable dashboard. AWS Trusted Advisor is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices. The inspection includes security checks, such as Amazon S3 buckets with open access permissions.</p>
+<h3 id="pricing-and-support">Pricing and Support<a class="headerlink" href="#pricing-and-support" title="Permanent link">&para;</a></h3>
+<h3 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h3>
+<h4 id="aws-free-tier">AWS Free Tier<a class="headerlink" href="#aws-free-tier" title="Permanent link">&para;</a></h4>
+<p><em>The AWS Free Tier</em> enables you to begin using certain services without having to worry about incurring costs for the specified period.</p>
+<p>Three types of offers are available:</p>
+<ul>
+<li>Always Free</li>
+<li>12 Months Free</li>
+<li>Trials</li>
+</ul>
+<p><em>Always Free</em> These offers do not expire and are available to all AWS customers. For example, AWS Lambda allows 1 million free requests and up to 3.2 million seconds of compute time per month. Amazon DynamoDB allows 25 GB of free storage per month.</p>
+<p><em>12 Months Free</em> These offers are free for 12 months following your initial sign-up date to AWS. Examples include specific amounts of Amazon S3 Standard Storage, thresholds for monthly hours of Amazon EC2 compute time, and amounts of Amazon CloudFront data transfer out.</p>
+<p><em>Trials</em> Short-term free trial offers start from the date you activate a particular service. The length of each trial might vary by number of days or the amount of usage in the service. For example, Amazon Inspector offers a 90-day free trial. Amazon Lightsail (a service that enables you to run virtual private servers) offers 750 free hours of usage over a 30-day period.</p>
+<h4 id="pay-for-what-you-use"><em>Pay for what you use</em><a class="headerlink" href="#pay-for-what-you-use" title="Permanent link">&para;</a></h4>
+<p>For each service, you pay for exactly the amount of resources that you actually use, without requiring long-term contracts or complex licensing.</p>
+<h4 id="pay-less-when-you-reserve"><em>Pay less when you reserve.</em><a class="headerlink" href="#pay-less-when-you-reserve" title="Permanent link">&para;</a></h4>
+<p>Some services offer reservation options that provide a significant discount compared to On-Demand Instance pricing.</p>
+<p>For example, suppose that your company is using Amazon EC2 instances for a workload that needs to run continuously. You might choose to run this workload on Amazon EC2 Instance Savings Plans, because the plan allows you to save up to 72% over the equivalent On-Demand Instance capacity.</p>
+<h4 id="pay-less-with-volume-based-discounts-when-you-use-more">Pay less with volume-based discounts when you use more.<a class="headerlink" href="#pay-less-with-volume-based-discounts-when-you-use-more" title="Permanent link">&para;</a></h4>
+<p>Some services offer tiered pricing, so the per-unit cost is incrementally lower with increased usage. For example, the more Amazon S3 storage space you use, the less you pay for it per GB.</p>
+<h4 id="aws-pricing-calculator">AWS Pricing Calculator<a class="headerlink" href="#aws-pricing-calculator" title="Permanent link">&para;</a></h4>
+<p><em>The AWS Pricing Calculator</em> lets you explore AWS services and create an estimate for the cost of your use cases on AWS. You can organize your AWS estimates by groups that you define. A group can reflect how your company is organized, such as providing estimates by cost center. When you have created an estimate, you can save it and generate a link to share it with others.</p>
+<p>Suppose that your company is interested in using Amazon EC2. However, you are not yet sure which AWS Region or instance type would be the most cost-efficient for your use case. In the AWS Pricing Calculator, you can enter details, such as the kind of operating system you need, memory requirements, and input/output (I/O) requirements. By using the AWS Pricing Calculator, you can review an estimated comparison of different EC2 instance types across AWS Regions.</p>
+<h4 id="pricing-examples">Pricing Examples:<a class="headerlink" href="#pricing-examples" title="Permanent link">&para;</a></h4>
+<p>For <em>Pricing AWS Lambda</em>, you are charged based on the number of requests for your functions and the time that it takes for them to run. AWS Lambda allows 1 million free requests and up to 3.2 million seconds of compute time per month. You can save on AWS Lambda costs by signing up for a Compute Savings Plan. A Compute Savings Plan offers lower compute costs in exchange for committing to a consistent amount of usage over a 1-year or 3-year term. This is an example of paying less when you reserve.</p>
+<p>With <em>Pricing Amazon EC2</em>, you pay for only the compute time that you use while your instances are running. For some workloads, you can significantly reduce Amazon EC2 costs by using Spot Instances. For example, suppose that you are running a batch processing job that is able to withstand interruptions. Using a Spot Instance would provide you with up to 90% cost savings while still meeting the availability requirements of your workload. You can find additional cost savings for Amazon EC2 by considering Savings Plans and Reserved Instances.</p>
+<p>For <em>Amazon S3 pricing</em>, consider the following cost components:</p>
+<p><strong>Storage</strong> - You pay for only the storage that you use. You are charged the rate to store objects in your Amazon S3 buckets based on your objects' sizes, storage classes, and how long you have stored each object during the month.</p>
+<p><strong>Requests and data retrievals</strong> - You pay for requests made to your Amazon S3 objects and buckets. For example, suppose that you are storing photo files in Amazon S3 buckets and hosting them on a website. Every time a visitor requests the website that includes these photo files, this counts towards requests you must pay for.</p>
+<p><strong>Data transfer</strong> - There is no cost to transfer data between different Amazon S3 buckets or from Amazon S3 to other services within the same AWS Region. However, you pay for data that you transfer into and out of Amazon S3, with a few exceptions. There is no cost for data transferred into Amazon S3 from the internet or out to Amazon CloudFront. There is also no cost for data transferred out to an Amazon EC2 instance in the same AWS Region as the Amazon S3 bucket.</p>
+<p><strong>Management and replication</strong> - You pay for the storage management features that you have enabled on your account's Amazon S3 buckets. These features include Amazon S3 inventory, analytics, and object tagging.</p>
+<p><em>AWS Billing &amp; Cost Management dashboard</em> to pay your AWS bill, monitor your usage, and analyze and control your costs.</p>
+<ul>
+<li>Compare your current month-to-date balance with the previous month, and get a forecast of the next month based on current usage.</li>
+<li>View month-to-date spend by service.</li>
+<li>View Free Tier usage by service.</li>
+<li>Access Cost Explorer and create budgets.</li>
+<li>Purchase and manage Savings Plans.</li>
+<li>Publish AWS Cost and Usage Reports</li>
+</ul>
+<h3 id="support-plans">Support Plans<a class="headerlink" href="#support-plans" title="Permanent link">&para;</a></h3>
+<h4 id="aws-support">AWS Support<a class="headerlink" href="#aws-support" title="Permanent link">&para;</a></h4>
+<p>AWS offers four different Support plans(opens in a new tab) to help you troubleshoot issues, lower costs, and efficiently use AWS services.</p>
+<p>You can choose from the following Support plans to meet your company's needs:</p>
+<ul>
+<li>Basic</li>
+<li>Developer</li>
+<li>Business</li>
+<li>Enterprise On-Ramp</li>
+<li>Enterprise</li>
+</ul>
+<h4 id="basic-support">Basic Support<a class="headerlink" href="#basic-support" title="Permanent link">&para;</a></h4>
+<p>Basic Support is free for all AWS customers. It includes access to whitepapers, documentation, and support communities. With Basic Support, you can also contact AWS for billing questions and service limit increases.</p>
+<p>With Basic Support, you have access to a limited selection of AWS Trusted Advisor checks. Additionally, you can use the AWS Personal Health Dashboard, a tool that provides alerts and remediation guidance when AWS is experiencing events that may affect you.</p>
+<p>If your company needs support beyond the Basic level, you could consider purchasing Developer, Business, Enterprise On-Ramp, and Enterprise Support.</p>
+<h4 id="developer-support">Developer Support<a class="headerlink" href="#developer-support" title="Permanent link">&para;</a></h4>
+<p>Customers in the Developer Support plan have access to features such as:</p>
+<ul>
+<li>Best practice guidance</li>
+<li>Client-side diagnostic tools</li>
+<li>Building-block architecture support, which consists of guidance for how to use AWS offerings, features, and services together</li>
+</ul>
+<p>For example, suppose that your company is exploring AWS services. You've heard about a few different AWS services. However, you're unsure of how to potentially use them together to build applications that can address your company's needs. In this scenario, the building-block architecture support that is included with the Developer Support plan could help you to identify opportunities for combining specific services and features.</p>
+<h4 id="business-support">Business Support<a class="headerlink" href="#business-support" title="Permanent link">&para;</a></h4>
+<p>Customers with a Business Support plan have access to additional features, including:</p>
+<ul>
+<li>Use-case guidance to identify AWS offerings, features, and services that can best support your specific needs</li>
+<li>All AWS Trusted Advisor checks</li>
+<li>Limited support for third-party software, such as common operating systems and application stack components</li>
+</ul>
+<p>Suppose that your company has the Business Support plan and wants to install a common third-party operating system onto your Amazon EC2 instances. You could contact AWS Support for assistance with installing, configuring, and troubleshooting the operating system. For advanced topics such as optimizing performance, using custom scripts, or resolving security issues, you may need to contact the third-party software provider directly.</p>
+<h4 id="enterprise-on-ramp-support">Enterprise On-Ramp Support<a class="headerlink" href="#enterprise-on-ramp-support" title="Permanent link">&para;</a></h4>
+<p>In November 2021, AWS opened enrollment into AWS Enterprise On-Ramp Support plan. In addition to all the features included in the Basic, Developer, and Business Support plans, customers with an Enterprise On-Ramp Support plan have access to:</p>
+<ul>
+<li>A pool of Technical Account Managers to provide proactive guidance and coordinate access to programs and AWS experts</li>
+<li>A Cost Optimization workshop (one per year)</li>
+<li>A Concierge support team for billing and account assistance</li>
+<li>Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard</li>
+</ul>
+<p>Enterprise On-Ramp Support plan also provides access to a specific set of proactive support services, which are provided by a pool of Technical Account Managers.</p>
+<ul>
+<li>Consultative review and architecture guidance (one per year)</li>
+<li>Infrastructure Event Management support (one per year)</li>
+<li>Support automation workflows</li>
+<li>30 minutes or less response time for business-critical issues</li>
+</ul>
+<h4 id="enterprise-support">Enterprise Support<a class="headerlink" href="#enterprise-support" title="Permanent link">&para;</a></h4>
+<p>In addition to all features included in the Basic, Developer, Business, and Enterprise On-Ramp support plans, customers with Enterprise Support have access to:</p>
+<ul>
+<li>A designated Technical Account Manager to provide proactive guidance and coordinate access to programs and AWS experts</li>
+<li>A Concierge support team for billing and account assistance</li>
+<li>Operations Reviews and tools to monitor health</li>
+<li>Training and Game Days to drive innovation</li>
+<li>Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard</li>
+</ul>
+<p>The Enterprise plan also provides full access to proactive services, which are provided by a designated Technical Account Manager:</p>
+<ul>
+<li>Consultative review and architecture guidance</li>
+<li>Infrastructure Event Management support</li>
+<li>Cost Optimization Workshop and tools</li>
+<li>Support automation workflows</li>
+<li>15 minutes or less response time for business-critical issues</li>
+</ul>
+<h4 id="developer-business-enterprise-on-ramp-and-enterprise-support">Developer, Business, Enterprise On-Ramp, and Enterprise Support<a class="headerlink" href="#developer-business-enterprise-on-ramp-and-enterprise-support" title="Permanent link">&para;</a></h4>
+<p>The Developer, Business, Enterprise On-Ramp, and Enterprise Support plans include all the benefits of Basic Support, in addition to the ability to open an unrestricted number of technical support cases. These Support plans have pay-by-the-month pricing and require no long-term contracts.</p>
+<p>The information in this course highlights only a selection of details for each Support plan. A complete overview of what is included in each Support plan, including pricing for each plan, is available on the AWS Support site.</p>
+<p>In general, for pricing, the Developer plan has the lowest cost, the Business and Enterprise On-Ramp plans are in the middle, and the Enterprise plan has the highest cost.</p>
+<h4 id="technical-account-manager-tam">Technical Account Manager (TAM)<a class="headerlink" href="#technical-account-manager-tam" title="Permanent link">&para;</a></h4>
+<p>The Enterprise On-Ramp and Enterprise Support plans include access to a Technical Account Manager (TAM).</p>
+<p>The TAM is your primary point of contact at AWS. If your company subscribes to Enterprise Support or Enterprise On-Ramp, your TAM educates, empowers, and evolves your cloud journey across the full range of AWS services. TAMs provide expert engineering guidance, help you design solutions that efficiently integrate AWS services, assist with cost-effective and resilient architectures, and provide direct access to AWS programs and a broad community of experts.</p>
+<p>For example, suppose that you are interested in developing an application that uses several AWS services together. Your TAM could provide insights into how to best use the services together. They achieve this, while aligning with the specific needs that your company is hoping to address through the new application.</p>
+<h3 id="migration-and-innovation">Migration and Innovation<a class="headerlink" href="#migration-and-innovation" title="Permanent link">&para;</a></h3>
+<h4 id="aws-cloud-adoption-framework">AWS Cloud Adoption Framework<a class="headerlink" href="#aws-cloud-adoption-framework" title="Permanent link">&para;</a></h4>
+<p>The <strong>Cloud Adoption Framework</strong> exists to provide advice to your company to enable a quick and smooth migration to AWS.</p>
+<p>The different Perspectives are Business, People, and Governance Perspectives, which focus on the business capabilities, and then you have the Platform, Security and Operations Perspectives which focus on the technical capabilities.</p>
+<p>Each Perspective is used to uncover gaps in your skills and processes, which are then recorded as inputs. These inputs are then used as the basis for creating what is called an <strong>AWS Cloud Adoption Framework Action Plan</strong> that you then use to guide your organization's change management as you journey to the cloud. Having an action plan that makes sense for your organization can help keep you on track. Migrating to the cloud can be complicated, but again, you're not alone in this, there are tons of resources to help you get started, and the Cloud Adoption Framework is a great place to look.</p>
+<h4 id="business-perspective">Business Perspective<a class="headerlink" href="#business-perspective" title="Permanent link">&para;</a></h4>
+<p>The <strong>Business Perspective</strong> ensures that IT aligns with business needs and that IT investments link to key business results. Use the Business Perspective to create a strong business case for cloud adoption and prioritize cloud adoption initiatives. Ensure that your business strategies and goals align with your IT strategies and goals.</p>
+<p>Common roles in the Business Perspective include:</p>
+<ul>
+<li>Business managers</li>
+<li>Finance managers</li>
+<li>Budget owners</li>
+<li>Strategy stakeholders</li>
+</ul>
+<h4 id="people-perspective">People Perspective<a class="headerlink" href="#people-perspective" title="Permanent link">&para;</a></h4>
+<p>The <strong>People Perspective</strong> supports development of an organization-wide change management strategy for successful cloud adoption. Use the People Perspective to evaluate organizational structures and roles, new skill and process requirements, and identify gaps. This helps prioritize training, staffing, and organizational changes.</p>
+<p>Common roles in the People Perspective include:</p>
+<ul>
+<li>Human resources</li>
+<li>Staffing</li>
+<li>People managers</li>
+</ul>
+<h4 id="governance-perspective">Governance Perspective<a class="headerlink" href="#governance-perspective" title="Permanent link">&para;</a></h4>
+<p>The <strong>Governance Perspective</strong> focuses on the skills and processes to align IT strategy with business strategy. This ensures that you maximize the business value and minimize risks. Use the Governance Perspective to understand how to update the staff skills and processes necessary to ensure business governance in the cloud. Manage and measure cloud investments to evaluate business outcomes.</p>
+<p>Common roles in the Governance Perspective include:</p>
+<ul>
+<li>Chief Information Officer (CIO)</li>
+<li>Program managers</li>
+<li>Enterprise architects</li>
+<li>Business analysts</li>
+<li>Portfolio managers</li>
+</ul>
+<h4 id="platform-perspective">Platform Perspective<a class="headerlink" href="#platform-perspective" title="Permanent link">&para;</a></h4>
+<p>The <strong>Platform Perspective</strong> includes principles and patterns for implementing new solutions on the cloud, and migrating on-premises workloads to the cloud. Use a variety of architectural models to understand and communicate the structure of IT systems and their relationships. Describe the architecture of the target state environment in detail.</p>
+<p>Common roles in the Platform Perspective include:</p>
+<ul>
+<li>Chief Technology Officer (CTO)</li>
+<li>IT managers</li>
+<li>Solutions architects</li>
+</ul>
+<h4 id="security-perspective">Security Perspective<a class="headerlink" href="#security-perspective" title="Permanent link">&para;</a></h4>
+<p>The <strong>Security Perspective</strong> ensures that the organization meets security objectives for visibility, auditability, control, and agility. Use the AWS CAF to structure the selection and implementation of security controls that meet the organization's needs.</p>
+<p>Common roles in the Security Perspective include:</p>
+<ul>
+<li>Chief Information Security Officer (CISO)</li>
+<li>IT security managers</li>
+<li>IT security analysts</li>
+</ul>
+<h4 id="operations-perspective">Operations Perspective<a class="headerlink" href="#operations-perspective" title="Permanent link">&para;</a></h4>
+<p>The <strong>Operations Perspective</strong> helps you to enable, run, use, operate, and recover IT workloads to the level agreed upon with your business stakeholders. Define how day-to-day, quarter-to-quarter, and year-to-year business is conducted. Align with and support the operations of the business. The AWS CAF helps these stakeholders define current operating procedures and identify the process changes and training needed to implement successful cloud adoption.</p>
+<p>Common roles in the Operations Perspective include:</p>
+<ul>
+<li>IT operations managers</li>
+<li>IT support managers</li>
+</ul>
+<h3 id="migration-strategies">Migration Strategies<a class="headerlink" href="#migration-strategies" title="Permanent link">&para;</a></h3>
+<h4 id="7-strategies-for-migration">7 strategies for migration<a class="headerlink" href="#7-strategies-for-migration" title="Permanent link">&para;</a></h4>
+<p>When migrating applications to the cloud, 7 of the most common migration strategies(opens in a new tab) that you can implement are:</p>
+<ul>
+<li>Rehosting</li>
+<li>Replatforming</li>
+<li>Refactoring/re-architecting</li>
+<li>Repurchasing</li>
+<li>Relocate</li>
+<li>Retaining</li>
+<li>Retiring</li>
+</ul>
+<p><strong>Rehosting:</strong> This is otherwise known as <strong>lift and shift</strong>. And this is an easy thing for businesses to do because you're not making any changes. At least not at first. Just pick up the applications and move them pretty much as is onto AWS. You may not get all the possible benefits. But some companies found that even without any optimization, they could save up to 30% of their total costs just by rehosting. Also, we find it's easier to optimize applications later once they already live in the cloud. Because your organization has better skills to do so. The hard part, the migration, is already complete.</p>
+<p><strong>Replatforming:</strong> Or <strong>lift, tinker, and shift</strong>. It's still basically a lift and shift, but instead of a pure one-to-one, you might make a few cloud optimizations. But you're not touching any core code in the process. No new dev efforts are involved here. For example, you could take your existing MySQL database and replatform it onto RDS MySQL, without any code changes at all. Or even consider upgrading to Amazon Aurora. This gives significant benefit to your DBA team as well as improved performance without any code changes.</p>
+<p><strong>Retire:</strong> Some parts of your enterprise IT portfolio are just no longer needed. We found as much as 10% to 20% of companies' application portfolios include applications that are no longer being used or already have replacements live and functional. Using the AWS migration plan as the opportunity to actually <strong>end-of-life</strong> these applications can save significant cost and effort for your team. Sometimes you just have to turn off the lights.</p>
+<p><strong>Retain:</strong> Some applications are about to be deprecated but maybe not just yet. They still need to run but don't turn them off for another three months or eight months. These apps could be migrated to AWS, but why? You should only migrate what makes sense for your business. And then as time goes on, these applications can be deprecated where they live, and ultimately retired.</p>
+<p><strong>Repurchase:</strong> This is common for companies looking to abandon legacy software vendors and get a fresh start as part of migration. For example, ending a contract with an old CRM vendor and moving to a brand new one. Or perhaps finally ending your licensing with an out-of-date database vendor in favor of cloud-native database offerings. Now, this sounds great, but remember, you'll now be dealing with a new software package and some are easy to implement, some take time. The total upfront expense of the step, therefore, goes up, but the potential benefits could be substantial.</p>
+<p><strong>Refactoring (also known as re-architecting):</strong> Now, you're writing new code. This is driven by a strong business need to add features or performance that might not be possible on-prem, but now are within your reach. Dramatic changes to your architecture can be very beneficial to your enterprise but this will come at the highest initial cost in terms of planning and human effort.</p>
+<h3 id="the-cloud-journey">The Cloud Journey<a class="headerlink" href="#the-cloud-journey" title="Permanent link">&para;</a></h3>
+<h3 id="the-aws-well-architected-framework">The AWS Well-Architected Framework<a class="headerlink" href="#the-aws-well-architected-framework" title="Permanent link">&para;</a></h3>
+<p>The <strong>AWS Well-Architected Framework</strong> helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.</p>
+<h4 id="the-well-architected-framework-is-based-on-six-pillars">The Well-Architected Framework is based on six pillars:<a class="headerlink" href="#the-well-architected-framework-is-based-on-six-pillars" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Operational excellence</li>
+<li>Security</li>
+<li>Reliability</li>
+<li>Performance efficiency</li>
+<li>Cost optimization</li>
+<li>Sustainability</li>
+</ul>
+<p><strong>Operational excellence Pillar</strong> is the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.</p>
+<p>Design principles for operational excellence in the cloud include performing operations as code, annotating documentation, anticipating failure, and frequently making small, reversible changes.</p>
+<p>The <strong>Security pillar</strong> is the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.</p>
+<p>When considering the security of your architecture, apply these best practices:</p>
+<ul>
+<li>Automate security best practices when possible.</li>
+<li>Apply security at all layers.</li>
+<li>Protect data in transit and at rest.</li>
+</ul>
+<p><strong>Reliability Pillar</strong> is the ability of a system to do the following:</p>
+<ul>
+<li>Recover from infrastructure or service disruptions</li>
+<li>Dynamically acquire computing resources to meet demand</li>
+<li>Mitigate disruptions such as misconfigurations or transient network issues</li>
+</ul>
+<p>Reliability includes testing recovery procedures, scaling horizontally to increase aggregate system availability, and automatically recovering from failure.</p>
+<p><strong>Performance efficiency Pillar</strong> is the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.</p>
+<p>Evaluating the performance efficiency of your architecture includes experimenting more often, using serverless architectures, and designing systems to be able to go global in minutes.</p>
+<p><strong>Cost optimization Pillar</strong> is the ability to run systems to deliver business value at the lowest price point.</p>
+<p>Cost optimization includes adopting a consumption model, analyzing and attributing expenditure, and using managed services to reduce the cost of ownership.</p>
+<p><strong>Sustainability Pillar</strong> is the ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.</p>
+<p>To facilitate good design for sustainability:</p>
+<ul>
+<li>Understand your impact</li>
+<li>Establish sustainability goals</li>
+<li>Maximize utilization</li>
+<li>Anticipate and adopt new, more efficient hardware and software offerings</li>
+<li>Use managed services</li>
+<li>Reduce the downstream impact of your cloud workloads</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Georgette Webb
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "announce.dismiss", "navigation.top", "search.suggest", "search.share", "search.highlight", "content.tabs.link", "content.tooltips", "content.code.select", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1377 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cloud Practitioner - CLF-C02">
+      
+      
+        <meta name="author" content="Georgette Webb">
+      
+      
+      
+        <link rel="prev" href="../Networking%20and%20Content%20Delivery/">
+      
+      
+        <link rel="next" href="../Serverless/">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Security, Identity, and Compliance - Cloud Practitioner - CLF-C02</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#security-identity-and-compliance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-header__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud Practitioner - CLF-C02
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Security, Identity, and Compliance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-nav__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    Cloud Practitioner - CLF-C02
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Application%20Integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Application Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloud%20Financial%20Management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Financial Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Customer%20Engagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customer Engagement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developer%20Tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../End%20User%20Computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    End User Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontend%20Web%20and%20Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend Web and Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Internet%20of%20Things%20%28IoT%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internet of Things (IoT)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine%20Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Management%20and%20Governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Management and Governance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Migration%20and%20Transfer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migration and Transfer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Networking%20and%20Content%20Delivery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking and Content Delivery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Security, Identity, and Compliance
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Security, Identity, and Compliance
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#security-identity-and-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security, Identity, and Compliance:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security, Identity, and Compliance:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-artifact" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Artifact
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS Artifact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-artifact-agreements" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Artifact Agreements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-artifact-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Artifact Reports
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customer-compliance-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customer Compliance Center
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-audit-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Audit Manager*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-certificate-manager-acm" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Certificate Manager (ACM)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-cloudhsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS CloudHSM*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-cognito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Cognito*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-detective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Detective*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-directory-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Directory Service*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-firewall-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Firewall Manager*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-guardduty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon GuardDuty
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-identity-and-access-management-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Identity and Access Management (IAM)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS Identity and Access Management (IAM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-account-root-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS account Root User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root-user-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Root User Best practice:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam-user-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM User Best practice:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam-policies-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM policies Best practice:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam-roles-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM Roles Best practice:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-factor-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-factor authentication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-iam-identity-center-successor-aws-single-sign-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS IAM Identity Center (Successor AWS Single Sign-On)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Inspector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-key-management-service-aws-kms" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Key Management Service (AWS KMS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-macie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Macie*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-network-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Network Firewall*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-resource-access-manager-aws-ram" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Resource Access Manager (AWS RAM)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-secrets-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Secrets Manager*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-security-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Security Hub*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-shield" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Shield
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS Shield">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-shield-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Shield Standard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-shield-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Shield Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-waf" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS WAF
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Serverless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serverless
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AWS%20Global%20Infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Global Infrastructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interacting%20with%20AWS%20Services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interacting with AWS Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Summaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Security, Identity, and Compliance</h1>
+
+<h2 id="security-identity-and-compliance">Security, Identity, and Compliance:<a class="headerlink" href="#security-identity-and-compliance" title="Permanent link">&para;</a></h2>
+<h3 id="aws-artifact">AWS Artifact<a class="headerlink" href="#aws-artifact" title="Permanent link">&para;</a></h3>
+<p><em>AWS Artifact</em> is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections: AWS Artifact Agreements and AWS Artifact Reports.</p>
+<p>Depending on your company's industry, you may need to uphold specific standards. An audit or inspection will ensure that the company has met those standards.</p>
+<p>AWS Artifact provides access to AWS security and compliance documents, such as AWS ISO certifications, Payment Card Industry (PCI) reports, and Service Organization Control (SOC) reports</p>
+<h4 id="aws-artifact-agreements">AWS Artifact Agreements<a class="headerlink" href="#aws-artifact-agreements" title="Permanent link">&para;</a></h4>
+<p>Suppose that your company needs to sign an agreement with AWS regarding your use of certain types of information throughout AWS services. You can do this through AWS Artifact Agreements.</p>
+<p>In AWS Artifact Agreements, you can review, accept, and manage agreements for an individual account and for all your accounts in AWS Organizations. Different types of agreements are offered to address the needs of customers who are subject to specific regulations, such as the Health Insurance Portability and Accountability Act (HIPAA).</p>
+<h4 id="aws-artifact-reports">AWS Artifact Reports<a class="headerlink" href="#aws-artifact-reports" title="Permanent link">&para;</a></h4>
+<p>Next, suppose that a member of your company's development team is building an application and needs more information about their responsibility for complying with certain regulatory standards. You can advise them to access this information in AWS Artifact Reports.</p>
+<p>AWS Artifact Reports provide compliance reports from third-party auditors. These auditors have tested and verified that AWS is compliant with a variety of global, regional, and industry-specific security standards and regulations. AWS Artifact Reports remains up to date with the latest reports released. You can provide the AWS audit artifacts to your auditors or regulators as evidence of AWS security controls.</p>
+<h3 id="customer-compliance-center">Customer Compliance Center<a class="headerlink" href="#customer-compliance-center" title="Permanent link">&para;</a></h3>
+<p>The Customer Compliance Center contains resources to help you learn more about AWS compliance. In the Customer Compliance Center, you can read customer compliance stories to discover how companies in regulated industries have solved various compliance, governance, and audit challenges.</p>
+<p>You can also access compliance whitepapers and documentation on topics such as:</p>
+<ul>
+<li>AWS answers to key compliance questions</li>
+<li>An overview of AWS risk and compliance</li>
+<li>An auditing security checklist</li>
+</ul>
+<p>Additionally, the Customer Compliance Center includes an auditor learning path. This learning path is designed for individuals in auditing, compliance, and legal roles who want to learn more about how their internal operations can demonstrate compliance using the AWS Cloud.</p>
+<h3 id="aws-audit-manager">AWS Audit Manager*<a class="headerlink" href="#aws-audit-manager" title="Permanent link">&para;</a></h3>
+<p><em>AWS Audit Manager</em> to map your compliance requirements to AWS usage data with prebuilt and custom frameworks and automated evidence collection.</p>
+<h3 id="aws-certificate-manager-acm">AWS Certificate Manager (ACM)*<a class="headerlink" href="#aws-certificate-manager-acm" title="Permanent link">&para;</a></h3>
+<p><em>AWS Certificate Manager (ACM</em>) to provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services and your internal connected resources. ACM removes the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates.</p>
+<h3 id="aws-cloudhsm">AWS CloudHSM*<a class="headerlink" href="#aws-cloudhsm" title="Permanent link">&para;</a></h3>
+<p><em>AWS CloudHSM</em> service helps you meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated Hardware Security Module (HSM) instances within the AWS cloud. AWS and AWS Marketplace partners offer a variety of solutions for protecting sensitive data within the AWS platform, but for some applications and data subject to contractual or regulatory mandates for managing cryptographic keys, additional protection may be necessary. CloudHSM complements existing data protection solutions and allows you to protect your encryption keys within HSMs that are designed and validated to government standards for secure key management. CloudHSM allows you to securely generate, store, and manage cryptographic keys used for data encryption in a way that keys are accessible only by you.</p>
+<h3 id="amazon-cognito">Amazon Cognito*<a class="headerlink" href="#amazon-cognito" title="Permanent link">&para;</a></h3>
+<p><em>Amazon Cognito</em> Deliver frictionless customer identity and access management (CIAM) with a cost-effective and customizable platform.</p>
+<p>Add security features that support various compliance regulations, such as adaptive authentication, support compliance, and data residency requirements.</p>
+<p>Scale to millions of users across devices with a fully managed, high-performant, and reliable identity store.</p>
+<h3 id="amazon-detective">Amazon Detective*<a class="headerlink" href="#amazon-detective" title="Permanent link">&para;</a></h3>
+<p><em>Amazon Detective</em> simplifies the investigative process and helps security teams conduct faster and more effective investigations. With the Amazon Detective prebuilt data aggregations, summaries, and context, you can quickly analyze and determine the nature and extent of possible security issues</p>
+<h3 id="aws-directory-service">AWS Directory Service*<a class="headerlink" href="#aws-directory-service" title="Permanent link">&para;</a></h3>
+<p><em>AWS Directory Service</em> for Microsoft Active Directory, also known as AWS Managed Microsoft AD, activates your directory-aware workloads and AWS resources to use managed AD on AWS</p>
+<h3 id="aws-firewall-manager">AWS Firewall Manager*<a class="headerlink" href="#aws-firewall-manager" title="Permanent link">&para;</a></h3>
+<p><em>AWS Firewall Manager</em> is a security management service that allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organizations. As new applications are created, Firewall Manager makes it easier to bring new applications and resources into compliance by enforcing a common set of security rules.</p>
+<h3 id="amazon-guardduty">Amazon GuardDuty<a class="headerlink" href="#amazon-guardduty" title="Permanent link">&para;</a></h3>
+<p><em>Amazon GuardDuty</em> is a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.</p>
+<p>After you have enabled GuardDuty for your AWS account, GuardDuty begins monitoring your network and account activity. You do not have to deploy or manage any additional security software. GuardDuty then continuously analyzes data from multiple AWS sources, including VPC Flow Logs and DNS logs.</p>
+<p>If GuardDuty detects any threats, you can review detailed findings about them from the AWS Management Console. Findings include recommended steps for remediation. You can also configure AWS Lambda functions to take remediation steps automatically in response to GuardDuty's security findings.</p>
+<h3 id="aws-identity-and-access-management-iam">AWS Identity and Access Management (IAM)<a class="headerlink" href="#aws-identity-and-access-management-iam" title="Permanent link">&para;</a></h3>
+<p><em>AWS Identity and Access Management (IAM)</em> enables you to manage access to AWS services and resources securely.</p>
+<p>IAM gives you the flexibility to configure access based on your company's specific operational and security needs. You do this by using a combination of IAM features:</p>
+<ul>
+<li>IAM users, groups, and roles</li>
+<li>IAM policies</li>
+<li>Multi-factor authentication</li>
+</ul>
+<h4 id="aws-account-root-user"><em>AWS account Root User</em><a class="headerlink" href="#aws-account-root-user" title="Permanent link">&para;</a></h4>
+<p>When you first create an AWS account, you begin with an identity known as the  <strong>root user</strong> (opens in a new tab).</p>
+<p>The root user is accessed by signing in with the email address and password that you used to create your AWS account. You can think of the root user as being similar to the owner of the coffee shop. It has complete access to all the AWS services and resources in the account.</p>
+<h4 id="root-user-best-practice"><em>Root User Best practice:</em><a class="headerlink" href="#root-user-best-practice" title="Permanent link">&para;</a></h4>
+<p>Do  <strong>not</strong>  use the root user for everyday tasks. Instead, use the root user to create your first IAM user and assign it permissions to create other users. Then, continue to create other IAM users, and access those identities for performing regular tasks throughout AWS. Only use the root user when you need to perform a limited number of tasks that are only available to the root user. Examples of these tasks include changing your root user email address and changing your AWS support plan.</p>
+<p><em>IAM users</em></p>
+<p><em>IAM user</em> is an identity that you create in AWS. It represents the person or application that interacts with AWS services and resources. It consists of a name and credentials.</p>
+<p>By default, when you create a new IAM user in AWS, it has no permissions associated with it. To allow the IAM user to perform specific actions in AWS, such as launching an Amazon EC2 instance or creating an Amazon S3 bucket, you must grant the IAM user the necessary permissions.</p>
+<h4 id="iam-user-best-practice"><em>IAM User</em> <em>Best practice:</em><a class="headerlink" href="#iam-user-best-practice" title="Permanent link">&para;</a></h4>
+<p>We recommend that you create individual IAM users for each person who needs to access AWS.</p>
+<p>Even if you have multiple employees who require the same level of access, you should create individual IAM users for each of them. This provides additional security by allowing each IAM user to have a unique set of security credentials.</p>
+<h4 id="iam-policies"><em>IAM policies</em><a class="headerlink" href="#iam-policies" title="Permanent link">&para;</a></h4>
+<p><em>IAM policy</em> is a document that allows or denies permissions to AWS services and resources.</p>
+<p>IAM policies enable you to customize users' levels of access to resources. For example, you can allow users to access all of the Amazon S3 buckets within your AWS account, or only a specific bucket.</p>
+<h4 id="iam-policies-best-practice"><em>IAM policies Best practice:</em><a class="headerlink" href="#iam-policies-best-practice" title="Permanent link">&para;</a></h4>
+<p>Follow the security principle of  <strong>least privilege</strong>  when granting permissions. By following this principle, you help to prevent users or roles from having more permissions than needed to perform their tasks.</p>
+<p>For example, if an employee needs access to only a specific bucket, specify the bucket in the IAM policy. Do this instead of granting the employee access to all of the buckets in your AWS account.</p>
+<h4 id="iam-groups"><em>IAM groups</em><a class="headerlink" href="#iam-groups" title="Permanent link">&para;</a></h4>
+<p><em>IAM group</em> is a collection of IAM users. When you assign an IAM policy to a group, all users in the group are granted permissions specified by the policy.</p>
+<p>Here's an example of how this might work in the coffee shop. Instead of assigning permissions to cashiers one at a time, the owner can create a "Cashiers" IAM group. The owner can then add IAM users to the group and then attach permissions at the group level.</p>
+<p>Assigning IAM policies at the group level also makes it easier to adjust permissions when an employee transfers to a different job. For example, if a cashier becomes an inventory specialist, the coffee shop owner removes them from the "Cashiers" IAM group and adds them into the "Inventory Specialists" IAM group. This ensures that employees have only the permissions that are required for their current role.</p>
+<h4 id="iam-roles">IAM Roles<a class="headerlink" href="#iam-roles" title="Permanent link">&para;</a></h4>
+<p>In the coffee shop, an employee rotates to different workstations throughout the day. Depending on the staffing of the coffee shop, this employee might perform several duties: work at the cash register, update the inventory system, process online orders, and so on.</p>
+<p>When the employee needs to switch to a different task, they give up their access to one workstation and gain access to the next workstation. The employee can easily switch between workstations, but at any given point in time, they can have access to only a single workstation. This same concept exists in AWS with IAM roles.</p>
+<p>An IAM role is an identity that you can assume to gain temporary access to permissions.</p>
+<h4 id="iam-roles-best-practice">IAM Roles Best practice:<a class="headerlink" href="#iam-roles-best-practice" title="Permanent link">&para;</a></h4>
+<p>IAM roles are ideal for situations in which access to services or resources needs to be granted temporarily, instead of long-term.</p>
+<h4 id="multi-factor-authentication">Multi-factor authentication<a class="headerlink" href="#multi-factor-authentication" title="Permanent link">&para;</a></h4>
+<p>Have you ever signed in to a website that required you to provide multiple pieces of information to verify your identity? You might have needed to provide your password and then a second form of authentication, such as a random code sent to your phone. This is an example of <strong>multi-factor authentication</strong>.</p>
+<p>In IAM, multi-factor authentication (MFA) provides an extra layer of security for your AWS account.</p>
+<h3 id="aws-iam-identity-center-successor-aws-single-sign-on">AWS IAM Identity Center (Successor AWS Single Sign-On)*<a class="headerlink" href="#aws-iam-identity-center-successor-aws-single-sign-on" title="Permanent link">&para;</a></h3>
+<p><em>AWS IAM Identity Center</em> helps you securely create or connect your workforce identities and manage their access centrally across AWS accounts and applications. IAM Identity Center is the recommended approach for workforce authentication and authorization on AWS for organizations of any size and type. Using IAM Identity Center, you can create and manage user identities in AWS, or connect your existing identity source, including Microsoft Active Directory, Okta, Ping Identity, JumpCloud, Google Workspace, and Azure Active Directory (Azure AD).</p>
+<h3 id="amazon-inspector">Amazon Inspector<a class="headerlink" href="#amazon-inspector" title="Permanent link">&para;</a></h3>
+<p>Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. It checks applications for security vulnerabilities and deviations from security best practices, such as open access to Amazon EC2 instances and installations of vulnerable software versions.</p>
+<p>After Amazon Inspector has performed an assessment, it provides you with a list of security findings. The list prioritizes by severity level, including a detailed description of each security issue and a recommendation for how to fix it. However, AWS does not guarantee that following the provided recommendations resolves every potential security issue. Under the shared responsibility model, customers are responsible for the security of their applications, processes, and tools that run on AWS services.</p>
+<h3 id="aws-key-management-service-aws-kms">AWS Key Management Service (AWS KMS)<a class="headerlink" href="#aws-key-management-service-aws-kms" title="Permanent link">&para;</a></h3>
+<p><em>AWS Key Management Service (AWS KMS)</em> enables you to perform encryption operations through the use of cryptographic keys. A cryptographic key is a random string of digits used for locking (encrypting) and unlocking (decrypting) data. You can use AWS KMS to create, manage, and use cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.</p>
+<p>With AWS KMS, you can choose the specific levels of access control that you need for your keys. For example, you can specify which IAM users and roles are able to manage keys. Alternatively, you can temporarily disable keys so that they are no longer in use by anyone. Your keys never leave AWS KMS, and you are always in control of them.</p>
+<h3 id="amazon-macie">Amazon Macie*<a class="headerlink" href="#amazon-macie" title="Permanent link">&para;</a></h3>
+<p><em>Amazon Macie</em> is a data security service that discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks.</p>
+<h3 id="aws-network-firewall">AWS Network Firewall*<a class="headerlink" href="#aws-network-firewall" title="Permanent link">&para;</a></h3>
+<p><em>AWS Network Firewall</em>, you can define firewall rules that provide fine-grained control over network traffic. Network Firewall works together with AWS Firewall Manager so you can build policies based on Network Firewall rules and then centrally apply those policies across your virtual private clouds (VPCs) and accounts.</p>
+<h3 id="aws-resource-access-manager-aws-ram">AWS Resource Access Manager (AWS RAM)*<a class="headerlink" href="#aws-resource-access-manager-aws-ram" title="Permanent link">&para;</a></h3>
+<p><em>AWS Resource Access Manager (AWS RAM)</em> helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs) in AWS Organizations, and with IAM roles and IAM users for supported resource types. You can use AWS RAM to share resources with other AWS accounts. This eliminates the need to provision and manage resources in every account. When you share a resource with another account, that account is granted access to the resource and any policies and permissions in that account apply to the shared resource.</p>
+<h3 id="aws-secrets-manager">AWS Secrets Manager*<a class="headerlink" href="#aws-secrets-manager" title="Permanent link">&para;</a></h3>
+<p><em>AWS Secrets Manager</em> helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets throughout their lifecycles. Many AWS services that use secrets store them in Secrets Manager.</p>
+<p>Secrets Manager helps you improve your security posture, because you no longer need hard-coded credentials in application source code. Storing the credentials in Secrets Manager helps avoid possible compromise by anyone who can inspect your application or the components. You replace hard-coded credentials with a runtime call to the Secrets Manager service to retrieve credentials dynamically when you need them.</p>
+<h3 id="aws-security-hub">AWS Security Hub*<a class="headerlink" href="#aws-security-hub" title="Permanent link">&para;</a></h3>
+<p><em>AWS Security Hub</em> provides you with a comprehensive view of your security state in AWS and helps you assess your AWS environment against security industry standards and best practices.</p>
+<p>Security Hub collects security data across AWS accounts, AWS services, and supported third-party products and helps you analyze your security trends and identify the highest priority security issues.</p>
+<p>Security Hub offers automation features that help you triage and remediate security issues.</p>
+<h3 id="aws-shield">AWS Shield<a class="headerlink" href="#aws-shield" title="Permanent link">&para;</a></h3>
+<p><em>AWS Shield</em> is a service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.</p>
+<h4 id="aws-shield-standard"><em>AWS Shield Standard</em><a class="headerlink" href="#aws-shield-standard" title="Permanent link">&para;</a></h4>
+<p>AWS Shield Standard automatically protects all AWS customers at no cost. It protects your AWS resources from the most common, frequently occurring types of DDoS attacks.</p>
+<p>As network traffic comes into your applications, AWS Shield Standard uses a variety of analysis techniques to detect malicious traffic in real time and automatically mitigates it.</p>
+<h4 id="aws-shield-advanced"><em>AWS Shield Advanced</em><a class="headerlink" href="#aws-shield-advanced" title="Permanent link">&para;</a></h4>
+<p>AWS Shield Advanced is a paid service that provides detailed attack diagnostics and the ability to detect and mitigate sophisticated DDoS attacks.</p>
+<p>It also integrates with other services such as Amazon CloudFront, Amazon Route 53, and Elastic Load Balancing. Additionally, you can integrate AWS Shield with AWS WAF by writing custom rules to mitigate complex DDoS attacks.</p>
+<h3 id="aws-waf">AWS WAF<a class="headerlink" href="#aws-waf" title="Permanent link">&para;</a></h3>
+<p><em>AWS WAF</em> is a web application firewall that lets you monitor network requests that come into your web applications. AWS WAF works together with Amazon CloudFront and an Application Load Balancer. Recall the network access control lists that you learned about in an earlier module. AWS WAF works in a similar way to block or allow traffic. However, it does this by using a web access control list (ACL) to protect your AWS resources.</p>
+<p>Here's an example of how you can use AWS WAF to allow and block specific requests.</p>
+<p>Suppose that your application has been receiving malicious network requests from several IP addresses. You want to prevent these requests from continuing to access your application, but you also want to ensure that legitimate users can still access it. You configure the web ACL to allow all requests except those from the IP addresses that you have specified. When a request comes into AWS WAF, it checks against the list of rules that you have configured in the web ACL. If a request does not come from one of the blocked IP addresses, it allows access to the application. However, if a request comes from one of the blocked IP addresses that you have specified in the web ACL, AWS WAF denies access.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Georgette Webb
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "announce.dismiss", "navigation.top", "search.suggest", "search.share", "search.highlight", "content.tabs.link", "content.tooltips", "content.code.select", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

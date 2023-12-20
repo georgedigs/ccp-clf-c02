@@ -1,0 +1,1081 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cloud Practitioner - CLF-C02">
+      
+      
+        <meta name="author" content="Georgette Webb">
+      
+      
+      
+        <link rel="prev" href="../Management%20and%20Governance/">
+      
+      
+        <link rel="next" href="../Networking%20and%20Content%20Delivery/">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>Migration and Transfer - Cloud Practitioner - CLF-C02</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#migration-and-transfer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-header__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud Practitioner - CLF-C02
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migration and Transfer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cloud Practitioner - CLF-C02" class="md-nav__button md-logo" aria-label="Cloud Practitioner - CLF-C02" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.986 0a.545.545 0 0 0-.534.548l-.006 4.908c0 .145.06.283.159.39a.532.532 0 0 0 .38.155h3.429l8.197 17.68a.536.536 0 0 0 .488.319h5.811a.547.547 0 0 0 .543-.548v-4.908a.543.543 0 0 0-.543-.548h-2.013L12.739.316A.55.55 0 0 0 12.245 0H4.991Zm.54 1.09h6.367l8.16 17.681a.536.536 0 0 0 .488.318h1.818v3.817h-4.922L9.24 5.226a.536.536 0 0 0-.488-.318h-3.23Zm2.013 8.237a.538.538 0 0 0-.486.31L.6 23.213a.55.55 0 0 0 .032.528.533.533 0 0 0 .454.25h6.169a.547.547 0 0 0 .497-.31l3.38-7.165a.54.54 0 0 0-.003-.469l-3.093-6.41a.547.547 0 0 0-.494-.31Zm.006 1.804 2.488 5.152-3.122 6.62H1.947Z"/></svg>
+
+    </a>
+    Cloud Practitioner - CLF-C02
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Application%20Integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Application Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloud%20Financial%20Management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Financial Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Customer%20Engagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customer Engagement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Developer%20Tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../End%20User%20Computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    End User Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontend%20Web%20and%20Mobile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frontend Web and Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Internet%20of%20Things%20%28IoT%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internet of Things (IoT)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Machine%20Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Management%20and%20Governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Management and Governance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Migration and Transfer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Migration and Transfer
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#migration-and-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration and Transfer:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migration and Transfer:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-application-discovery-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Application Discovery Service*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-application-migration-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Application Migration Service*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-database-migration-service-aws-dms" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Database Migration Service (AWS DMS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-migration-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Migration Hub*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-schema-conversion-tool-aws-sct" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Schema Conversion Tool (AWS SCT)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-snow-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Snow Family
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS Snow Family">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-snowball-offers-two-types-of-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Snowball offers two types of devices:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-transfer-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Transfer Family*
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS Transfer Family*">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-transfer-family-managed-file-transfer-mft" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Transfer Family Managed File Transfer (MFT)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Networking%20and%20Content%20Delivery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking and Content Delivery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security%2C%20Identity%2C%20and%20Compliance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security, Identity, and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Serverless/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serverless
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AWS%20Global%20Infrastructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Global Infrastructure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interacting%20with%20AWS%20Services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interacting with AWS Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Summaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Migration and Transfer</h1>
+
+<h2 id="migration-and-transfer">Migration and Transfer:<a class="headerlink" href="#migration-and-transfer" title="Permanent link">&para;</a></h2>
+<h3 id="aws-application-discovery-service">AWS Application Discovery Service*<a class="headerlink" href="#aws-application-discovery-service" title="Permanent link">&para;</a></h3>
+<p><em>AWS Application Discovery Service</em> collects and presents data to enable enterprise customers to understand the configuration, usage, and behavior of servers in their IT environments. Server data is retained in the Application Discovery Service where it can be tagged and grouped into applications to help organize AWS migration planning. Collected data can be exported for analysis in Excel or other cloud migration analysis tools.</p>
+<h3 id="aws-application-migration-service">AWS Application Migration Service*<a class="headerlink" href="#aws-application-migration-service" title="Permanent link">&para;</a></h3>
+<p><em>AWS Application Migration Service</em> minimizes time-intensive, error-prone manual processes by automating the conversion of your source servers to run natively on AWS. It also simplifies application modernization with built-in and custom optimization options.</p>
+<h3 id="aws-database-migration-service-aws-dms">AWS Database Migration Service (AWS DMS)<a class="headerlink" href="#aws-database-migration-service-aws-dms" title="Permanent link">&para;</a></h3>
+<p><em>AWS Database Migration Service (AWS DMS)</em> enables you to migrate relational databases, nonrelational databases, and other types of data stores.</p>
+<p>With AWS DMS, you move data between a source database and a target database. The source and target databases can be of the same type or different types. During the migration, your source database remains operational, reducing downtime for any applications that rely on the database.</p>
+<p>For example, suppose that you have a MySQL database that is stored on premises in an Amazon EC2 instance or in Amazon RDS. Consider the MySQL database to be your source database. Using AWS DMS, you could migrate your data to a target database, such as an Amazon Aurora database.</p>
+<p><em>Use Cases</em></p>
+<ol>
+<li><em>Development and test migration</em>: Enabling developers to test applications against production data without affecting production users.</li>
+<li><em>Database consolidation</em>: When you have several databases and want to consolidate them into one central database.</li>
+<li><em>Continuous Replication</em>: Using DMS to perform continuous data replication. This could be for disaster recovery or because of geographic separation.</li>
+</ol>
+<h3 id="aws-migration-hub">AWS Migration Hub*<a class="headerlink" href="#aws-migration-hub" title="Permanent link">&para;</a></h3>
+<p><em>AWS Migration Hub</em> provides access to the tools you need to collect and inventory your existing IT assets based on actual usage, analyze application components and infrastructure dependencies, and group resources into applications. You can generate migration strategy and Amazon Elastic Compute Cloud (EC2) instance recommendations for business case and migration planning, track the progress of application migrations to AWS, and modernize applications already running on AWS.</p>
+<h3 id="aws-schema-conversion-tool-aws-sct">AWS Schema Conversion Tool (AWS SCT)*<a class="headerlink" href="#aws-schema-conversion-tool-aws-sct" title="Permanent link">&para;</a></h3>
+<p><em>AWS Schema Conversion Tool (AWS SCT)</em> to convert your existing database schema from one database engine to another. You can convert relational OLTP schema, or data warehouse schema.</p>
+<h3 id="aws-snow-family">AWS Snow Family<a class="headerlink" href="#aws-snow-family" title="Permanent link">&para;</a></h3>
+<p>It should be noted that all Snow Family devices are designed to be secure and tamper-resistant while on-site or in transit. This means the hardware and software is cryptographically signed, and all data stored is automatically encrypted using 256-bit encryption keys, owned and managed by you, the customer. You can even use AWS Key Management Service to generate and manage keys.</p>
+<p><em>AWS Snowcone</em> is a device that holds up to eight terabytes of data and contains edge computing options such as Amazon EC2 instances and AWS IoT Greengrass. To obtain one, you place an order via AWS Management Console, we ship it to you, you plug it in and copy your data, and finally, ship it back to us. We'll then copy the data to your AWS account, usually an Amazon S3 bucket that you own and your data is available to use. Customers usually use these devices to ship terabytes of information such as analytics data, video libraries, image collections, backups, and even tape replacement data.</p>
+<p>AWS Snowcone is a small, rugged, and secure edge computing and data transfer device. It features 2 CPUs, 4 GB of memory, and up to 14 TB of usable storage.</p>
+<p><em>Snowball Edge</em> comes in two versions: a Snowball Edge Compute Optimized option and a Snowball Edge Storage Optimized option. They fit into existing server racks and can be clustered for greater computing needs. Once plugged into your infrastructure, they can run AWS Lambda functions, Amazon EC2-compatible AMIs, or even AWS IoT Greengrass to perform simple processing of data right then and there. Customers usually ship these to remote locations, where it's trickier to have a lot of computing power lying around. The use cases include capturing of streams from IoT devices, image compression, video transcoding, and even industrial signaling.</p>
+<h4 id="aws-snowball-offers-two-types-of-devices">AWS Snowball offers two types of devices:<a class="headerlink" href="#aws-snowball-offers-two-types-of-devices" title="Permanent link">&para;</a></h4>
+<p><em>Snowball Edge Storage Optimized</em> devices are well suited for large-scale data migrations and recurring transfer workflows, in addition to local computing with higher capacity needs.</p>
+<ul>
+<li>Storage: 80 TB of hard disk drive (HDD) capacity for block volumes and Amazon S3 compatible object storage, and 1 TB of SATA solid state drive (SSD) for block volumes.</li>
+<li>Compute: 40 vCPUs, and 80 GiB of memory to support Amazon EC2 sbe1 instances (equivalent to C5).</li>
+</ul>
+<p><em>Snowball Edge Compute Optimized</em> provides powerful computing resources for use cases such as machine learning, full motion video analysis, analytics, and local computing stacks.</p>
+<ul>
+<li>Storage: 80-TB usable HDD capacity for Amazon S3 compatible object storage or Amazon EBS compatible block volumes and 28 TB of usable NVMe SSD capacity for Amazon EBS compatible block volumes.</li>
+<li>Compute: 104 vCPUs, 416 GiB of memory, and an optional NVIDIA Tesla V100 GPU. Devices run Amazon EC2 sbe-c and sbe-g instances, which are equivalent to C5, M5a, G3, and P3 instances.</li>
+</ul>
+<p><em>AWS Snowmobile</em>, as the name suggests, is housed in a 45-foot rugged shipping container and pulled along by a truck. It houses 100 petabytes and is ideal for the largest migrations and even data center shutdowns. We drive the truck to your designated location, plug it in, and it then appears as a network attached storage device with a capacity of up to 100 petabytes. It is tamper resistant, waterproof, temperature controlled, and includes fire suppression and GPS tracking. It also has 24/7 video surveillance with a dedicated security team and escort security vehicle during transit.</p>
+<p>AWS Snowmobile is an exabyte-scale data transfer service used to move large amounts of data to AWS.</p>
+<ul>
+<li>You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi-trailer truck.</li>
+</ul>
+<h3 id="aws-transfer-family">AWS Transfer Family*<a class="headerlink" href="#aws-transfer-family" title="Permanent link">&para;</a></h3>
+<h4 id="aws-transfer-family-managed-file-transfer-mft"><em>AWS Transfer Family</em> Managed File Transfer (MFT)<a class="headerlink" href="#aws-transfer-family-managed-file-transfer-mft" title="Permanent link">&para;</a></h4>
+<p>The AWS Transfer Family offers fully managed support for the transfer of files over SFTP, AS2, FTPS, and FTP directly into and out of Amazon S3 or Amazon EFS. You can seamlessly migrate, automate, and monitor your file transfer workflows by maintaining existing client-side configurations for authentication, access, and firewalls — so nothing changes for your customers, partners, and internal teams, or their applications.</p>
+<p><em>SFTP stands for Secure Shell (SSH) File Transfer Protocol</em>, a network protocol used for secure transfer of data over the internet. The protocol supports the full security and authentication functionality of SSH, and is widely used to exchange data between business partners in a variety of industries including financial services, healthcare, media and entertainment, retail, advertising, and more.</p>
+<p><em>FTP stands for File Transfer Protocol</em>, a network protocol used for the transfer of data. FTP uses a separate channel for control and data transfers. The control channel is open until terminated or inactivity timeout, while the data channel is active for the duration of the transfer. FTP uses cleartext and does not support encryption of traffic.</p>
+<p><em>FTPS stands for File Transfer Protocol over SSL</em>, and is an extension to FTP. Like FTP, FTPS uses a separate channel for control and data transfers. The control channel is open until terminated or inactivity timeout, while the data channel is active for the duration of the transfer. FTPS uses Transport Layer Security (TLS) to encrypt traffic, and allows encryption of both the control and data channel connections either concurrently or independently.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Georgette Webb
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate", "announce.dismiss", "navigation.top", "search.suggest", "search.share", "search.highlight", "content.tabs.link", "content.tooltips", "content.code.select", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
